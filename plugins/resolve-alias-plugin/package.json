@@ -1,0 +1,11 @@
+{
+  "name": "resolve-alias-plugin",
+  "version": "0.0.1",
+  "description": "Resolve Aliases plugin",
+  "main": "gatsby-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shaun.m4rx@gmail.com (Shaun Marx)",
+  "license": "MIT"
+}
