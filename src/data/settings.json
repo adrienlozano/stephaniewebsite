@@ -1,0 +1,16 @@
+{
+    "social" : [
+        { "name" : "facebook", "url": "http://www.facebook.com" },
+        { "name": "twitter", "url": "http://www.twitter.com" }
+    ],
+    "landing":{
+        "callout" : {
+            "heading" : "Want to find out more?",
+            "subHeading" : "Subheading"
+        }
+    },
+    "general":{
+        "contactEmail" : "contact@mooremigration.com.au",
+        "contactNumber" : "1300123123"
+    }
+}
