@@ -1,62 +1,53 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Header from '~/components/header';
+import Footer from '~/components/footer';
+import { setDisplayName, compose, defaultProps } from 'recompose';
+import Head from 'react-helmet';
 
-import './index.css'
+//import 'mdi/css/materialdesignicons.css'
+import { ThemeProvider } from 'styled-components';
+import { Flex } from 'rebass';
+import { Provider  } from 'rebass';
 
-const Header = () =>
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
-
-const TemplateWrapper = ({ children }) =>
-  <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
-  </div>
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+const theme = {
+        colors: {
+            primary: "#11ACE7",
+            secondary:"#0277BD",
+            primaryAccent: "#F50057",
+            secondaryAccent: "#F06292",
+            neutralAccent: "#9CCC65",
+            dark: "#263238",
+            light: "#EEE",
+            danger: "#FF1E57"
+        },
+        font: "Roboto, Serif"
 }
 
-export default TemplateWrapper
+/*
+    primary: ["#11ACE7", "#0277BD" ],
+    accent: ["#F50057", "#F06292", "#9CCC65"],
+    text: "#212121",
+    grayscale: ['#263238', '#EEEEEE'],
+    divider: "#BDBDBD",
+*/
+ 
+const Body = ({children}) => (<div>{children}</div>);
+
+var Layout = ({children}) =>{
+    return (
+        <Provider theme={theme}>
+            <div style={{height: "100%" }}>
+           
+                <Body>{children}</Body>
+                <Footer/>
+            </div>
+        </Provider>
+    );
+}
+
+var enhance = compose(
+    setDisplayName('Layout')
+);
+
+export default enhance(Layout);
+export { Layout };
