@@ -4,30 +4,28 @@ import LinkButton from '~/components/link-button';
 import Typography from '~/components/typography'
 import { Card, CardMedia, CardContent, CardActions } from "~/components/card";
 
-import { defaultProps, compose, setDisplayName } from 'recompose';
+import {  compose, setDisplayName } from 'recompose';
 
-const ServiceCard = ({className, caption, extract, thumb, image, link, id, tags, ...props}) => {
+const ServiceCard = ({className, caption, extract, thumb, image, link,slug, id, tags, ...props}) => {
+
     return (
     <Card className={className} {...props}>
         <CardMedia>
              <img src={thumb}/>
         </CardMedia>
         <CardContent>
-            <Typography component="h5" size={1} mt={1}>{caption}</Typography>
+            <Typography component="h4" mt={1}>{caption}</Typography>
             <Typography>{extract}</Typography>
         </CardContent>
         
         <CardActions>
-            <LinkButton href={`/services/${id}`}>READ MORE</LinkButton>
+            <LinkButton href={slug}>READ MORE</LinkButton>
         </CardActions>
     </Card>
 )};
 
 const enhance = compose(
-    setDisplayName("ServiceCard"),
-    defaultProps({
-
-    })
+    setDisplayName("ServiceCard")
 );
 
 export default enhance(ServiceCard);

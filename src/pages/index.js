@@ -5,8 +5,8 @@ import { ServicesSection } from '~/components/services';
 import { NewsSection } from '~/components/news';
 
 export default ({data}) => {
-   const services = data.services.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id }));
-   const news = data.news.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id }));
+   const services = data.services.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug }));
+   const news = data.news.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug }));
 
 return (
     <div>
@@ -37,7 +37,7 @@ export const pageQuery = graphql`
       }
     }
   
-query IndexQuery {
+query LandingQuery {
     services:allMarkdownRemark(
         limit: 100
         filter:{ fields: { area: { eq: "services" } }}

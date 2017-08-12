@@ -2,8 +2,8 @@
 title: Citizenship Applications
 caption: Citizenship Applications
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
-image: /assets/images/services/visa-citizenship-application.jpg
-thumb: /assets/images/services/visa-citizenship-application.thumb.jpg
+image: images/services/visa-citizenship-application.jpg
+thumb: images/services/visa-citizenship-application.thumb.jpg
 ---
 Take the stress out of applying for your visa by having our experienced staff handle your visa application from start to finish. This service includes:
 * Explaining the procedures required for your application

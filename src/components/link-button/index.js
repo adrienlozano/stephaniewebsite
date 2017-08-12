@@ -1,16 +1,23 @@
 import React from 'react';
-import { Button } from 'rebass';
+import { BlockLink } from 'rebass';
 import styled from 'styled-components';
 import { color } from 'styled-system';
+import { defaultProps, compose } from 'recompose';
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(BlockLink)`
     background-color: transparent;
     ${color};
-    padding: 0;
-    &:hover {
+    &:hover, &:active {
         font-weight:bold;
-        background-color:transparent;
+        background-color:inherit;
     }
+    cursor: pointer;
 `
 
-export default StyledButton;
+const enhance = compose(
+    defaultProps( { 
+        color: "primaryAccent"
+    } )
+)
+
+export default enhance(StyledButton);

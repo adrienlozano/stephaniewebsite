@@ -3,7 +3,7 @@ import { VisaSection } from '~/components/visas';
 import Typography from '~/components/typography';
 
 export default ({className, data}) => {
-    const visas = data.visas.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id }));
+    const visas = data ? data.visas.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug })) : [];
     return (<VisaSection visas={visas}>
         </VisaSection>
     )

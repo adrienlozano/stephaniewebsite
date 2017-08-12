@@ -2,8 +2,8 @@
 title: Eligibility Assessment
 caption: Eligibility Assessment
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
-image: /assets/images/services/eligibility-assessment.jpg
-thumb: /assets/images/services/eligibility-assessment.thumb.jpg
+image: images/services/eligibility-assessment.jpg
+thumb: images/services/eligibility-assessment.thumb.jpg
 ---
 Visa and Citizenship requirements are becoming increasing complex and are frequently changing. Just because you or someone you know made a similar visa application last year, last month or even yesterday does not mean that it will be possible to make that same application again today or tomorrow.
 

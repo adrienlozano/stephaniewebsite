@@ -6,7 +6,6 @@ import { injectGlobal } from 'styled-components'
 
 import Head from 'react-helmet';
 
-//import 'mdi/css/materialdesignicons.css'
 import { ThemeProvider } from 'styled-components';
 import { Flex } from 'rebass';
 import { Provider  } from 'rebass';
@@ -15,6 +14,7 @@ import "react-responsive-carousel/lib/styles/carousel.css";
 import 'mdi/css/materialdesignicons.css';
 import 'typeface-roboto-slab';
 import 'typeface-roboto';
+import theme from "~/app/theme";
 
 injectGlobal`
   * { box-sizing: border-box; }
@@ -22,22 +22,6 @@ injectGlobal`
     height: 100%;
   }
 `
-
-const theme = {
-        colors: {
-            primary: "#11ACE7",
-            secondary:"#0277BD",
-            primaryAccent: "#F50057",
-            secondaryAccent: "#F06292",
-            neutralAccent: "#9CCC65",
-            dark: "#263238",
-            light: "#EEE",
-            danger: "#FF1E57",
-            white: "#FFF",
-            black: "#000"
-        },
-        font: "Roboto, Serif"
-}
  
 const Body = ({children}) => (<div>{children}</div>);
 

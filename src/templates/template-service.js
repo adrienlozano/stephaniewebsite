@@ -1,12 +1,13 @@
 import React from 'react';
+import PageSection from '~/components/page-section';
 
-const ServiceRoute = (props) =>{
-    let { html, frontmatter } = props.data.markdownRemark;
+const ServiceRoute = ({data}) =>{
+    let { html, frontmatter } = data ? data.markdownRemark : { frontmatter : {}};
     return (
-        <div>
+        <PageSection bg="light">
             <h1>{frontmatter.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: html }}></div>
-    </div>)
+    </PageSection>)
 }
 export default ServiceRoute;
 

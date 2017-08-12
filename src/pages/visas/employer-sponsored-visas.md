@@ -1,8 +1,8 @@
 ---
 title: Employer Sponsored Visas
 caption: Employer Sponsored Visas
-image: /assets/images/visas/employer-sponsored-visas.jpg
-thumb: /assets/images/visas/employer-sponsored-visas.thumb.jpg
+image: images/visas/employer-sponsored-visas.jpg
+thumb: images/visas/employer-sponsored-visas.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 ---
 These visas are for those who have an occupation that is in demand in Australia, meet the skills requirements and have an employer who is willing to sponsor them in that occupation.
