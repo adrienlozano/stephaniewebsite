@@ -1,30 +1,28 @@
 import { chain } from 'ramda';
 import React from 'react';
-import styled from 'styled-components';
+import styled, {withTheme} from 'styled-components';
 import { SocialIconGroup, SocialIconGroupItem, SocialIcon } from '~/components/social';
 import IconsContainer from "~/components/social/container";
-import { defaultProps } from 'recompose';
+import { withProps } from 'recompose';
 import { lighten } from 'polished';
 
+const toIcon = (theme) => chain(({name, url}) => {
+    const props = { 
+        color: theme.colors.dark,
+        backgroundColor: lighten(0.1, theme.colors.dark),
+        hoverColor: theme.colors.dark,
+        backgroundHoverColor: theme.colors.white
+    };
 
-const FooterSocialIcon = styled(SocialIcon)`
-    color: ${ ({theme}) => theme.colors.dark };
-    background-color: ${ ({theme}) => lighten(0.6, theme.colors.dark) };
-    &:hover{
-        background-color: ${ ({theme}) => theme.colors.white };
-        color: ${ ({theme}) => theme.colors.dark };
-    }
-`
-
-const toIcon = chain(({name, url}) => {
     return (
     <SocialIconGroupItem key={name}>
-        <FooterSocialIcon icon={name} url={url} />
+        <SocialIcon icon={name} url={url}  {...props} />
     </SocialIconGroupItem>);
 });
 
-const FooterIcons = ({icons, props})=>{
-    var children = icons.map(toIcon).getOrElse(null);
+const FooterIcons = ({icons, props, theme})=>{
+
+    var children = icons.map(toIcon(theme)).getOrElse(null);
 
     return (
         <SocialIconGroup {...props} >
@@ -33,4 +31,6 @@ const FooterIcons = ({icons, props})=>{
     )
 };
 
-export default (props) => (<IconsContainer component={FooterIcons} {...props} />)
+const EnhancedFooterIcons = withTheme(FooterIcons);
+
+export default (props) => (<IconsContainer component={EnhancedFooterIcons} {...props} />)

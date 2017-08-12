@@ -13,6 +13,8 @@ import { Provider  } from 'rebass';
 import 'normalize.css';
 import "react-responsive-carousel/lib/styles/carousel.css";
 import 'mdi/css/materialdesignicons.css';
+import 'typeface-roboto-slab';
+import 'typeface-roboto';
 
 injectGlobal`
   * { box-sizing: border-box; }
@@ -30,7 +32,9 @@ const theme = {
             neutralAccent: "#9CCC65",
             dark: "#263238",
             light: "#EEE",
-            danger: "#FF1E57"
+            danger: "#FF1E57",
+            white: "#FFF",
+            black: "#000"
         },
         font: "Roboto, Serif"
 }

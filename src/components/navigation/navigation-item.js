@@ -11,7 +11,7 @@ const enhance = compose(
     setDisplayName("NavigationItem"),
     defaultProps({
         py: 1,
-        mr: [ 0, 0, 1],
+        mr: [ 0, 0, 4],
         justify: [ 'center', 'center', 'flex-start']
     })
 );

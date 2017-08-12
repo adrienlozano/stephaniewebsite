@@ -15,7 +15,7 @@ const enhance = compose(
     direction: [ 'column', 'column', 'row'],
     width: 1,
     open: false,
-    p: 0,
+    py: 3,
     m: 0
   })
 );

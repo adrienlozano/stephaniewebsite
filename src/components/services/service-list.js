@@ -11,7 +11,6 @@ const StyledCardWrapper = styled(CardWrapper)`
 `
 
 const ServiceList = ({className, services}) => {
-    console.log(services);
     var result = services.map( (service) => (
         <StyledCardWrapper key={service.id} width={[1, 1, 0.39, 0.29]}>
             <ServiceCard {...service} ></ServiceCard>

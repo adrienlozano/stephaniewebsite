@@ -10,7 +10,7 @@ var NavigationLink= styled(Link)`
 
   height:100%;
 
-  font-weight: 300;
+  font-weight: 400;
   color: ${({theme}) => theme.colors.dark };
   text-decoration:none;
   font-size: 1.25rem;
