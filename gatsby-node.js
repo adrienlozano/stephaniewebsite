@@ -41,9 +41,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           component: slash(servicePagesTemplate),
           context: {
             area: edge.node.fields.area,
-            slug: edge.node.fields.slug,
-           // highlight: edge.node.frontmatter.highlight,
-         //   shadow: edge.node.frontmatter.shadow,
+            slug: edge.node.fields.slug
           },
         })
       })

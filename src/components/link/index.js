@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import styled, { css } from 'styled-components';
-import { Link as RouterLink } from 'react-router';
+import GatsbyLink from 'gatsby-link';
 
 const styles = css`
   font-family: ${ ({theme}) => theme.font };
@@ -14,7 +14,7 @@ const styles = css`
 `
 
 const StyledLink = styled(({ theme, reverse, palette, ...props }) =>
-  <RouterLink {...props} />
+  <GatsbyLink {...props} />
 )`${styles}`
 const Anchor = styled.a`${styles}`
 

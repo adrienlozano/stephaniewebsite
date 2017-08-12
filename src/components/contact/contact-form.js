@@ -7,7 +7,6 @@ import { curry } from 'ramda';
 import { withHandlers, withState, withStateHandlers, compose } from 'recompose';
 import { dripFormField, dripForm } from 'react-drip-form';
 import { fontSize, color } from 'styled-system';
-
 let ErrorBox = styled.span`
     ${color};
     ${fontSize};

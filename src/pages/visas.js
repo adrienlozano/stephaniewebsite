@@ -1,20 +1,20 @@
 import React from 'react';
-import { ServicesSection } from '~/components/services';
+import { VisaSection } from '~/components/visas';
 import Typography from '~/components/typography';
 
 export default ({className, data}) => {
-    const services = data.services.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id }));
-    return (<ServicesSection services={services}>
-    </ServicesSection>
-)
+    const visas = data.visas.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id }));
+    return (<VisaSection visas={visas}>
+        </VisaSection>
+    )
 };
 
 
 export const pageQuery = graphql`
-    query ServicesQuery {
-        services: allMarkdownRemark(
-        limit: 2000
-        filter:{ fields: { area: { eq: "services"} }}
+    query VisasQuery {
+        visas: allMarkdownRemark(
+        limit: 100
+        filter:{ fields: { area: { eq: "visas"} }}
     ){
       edges {
         node{

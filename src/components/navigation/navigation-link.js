@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
 import styled from 'styled-components'
+import { defaultProps, compose } from 'recompose';
 
 import Link from '~/components/link'
 
@@ -21,12 +22,16 @@ var NavigationLink= styled(Link)`
   }
 
   &:hover {
-      color: ${({theme}) => theme.colors.accent };
+      color: ${({theme}) => theme.colors.primaryAccent };
   }
 
   &.active{
-      border-bottom: 2px solid ${({theme}) => theme.colors.accent };
+      border-bottom: 2px solid ${({theme}) => theme.colors.primaryAccent };
   }
 `
 
-export default NavigationLink;
+const enhance = compose(
+  defaultProps( { "activeClassName" : "active" })
+);
+
+export default enhance(NavigationLink);

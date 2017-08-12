@@ -2,12 +2,24 @@ import React from 'react';
 import Header from '~/components/header';
 import Footer from '~/components/footer';
 import { setDisplayName, compose, defaultProps } from 'recompose';
+import { injectGlobal } from 'styled-components'
+
 import Head from 'react-helmet';
 
 //import 'mdi/css/materialdesignicons.css'
 import { ThemeProvider } from 'styled-components';
 import { Flex } from 'rebass';
 import { Provider  } from 'rebass';
+import 'normalize.css';
+import "react-responsive-carousel/lib/styles/carousel.css";
+import 'mdi/css/materialdesignicons.css';
+
+injectGlobal`
+  * { box-sizing: border-box; }
+  body, html, #PhenomicRoot, #PhenomicRoot > div {
+    height: 100%;
+  }
+`
 
 const theme = {
         colors: {
@@ -22,14 +34,6 @@ const theme = {
         },
         font: "Roboto, Serif"
 }
-
-/*
-    primary: ["#11ACE7", "#0277BD" ],
-    accent: ["#F50057", "#F06292", "#9CCC65"],
-    text: "#212121",
-    grayscale: ['#263238', '#EEEEEE'],
-    divider: "#BDBDBD",
-*/
  
 const Body = ({children}) => (<div>{children}</div>);
 
@@ -37,8 +41,8 @@ var Layout = ({children}) =>{
     return (
         <Provider theme={theme}>
             <div style={{height: "100%" }}>
-           
-                <Body>{children}</Body>
+                <Header/>
+                <Body>{children()}</Body>
                 <Footer/>
             </div>
         </Provider>

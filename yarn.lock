@@ -1859,6 +1859,10 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
+classnames@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
+
 clean-stack@^1.1.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-1.3.0.tgz#9e821501ae979986c46b1d66d2d432db2fd4ae31"
@@ -3543,6 +3547,17 @@ gatsby-remark-copy-linked-files@^1.5.0:
     lodash "^4.17.4"
     unist-util-visit "^1.1.1"
 
+gatsby-remark-images@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-1.5.2.tgz#1c533602febe9c8cd1a496f80d083b1720686fab"
+  dependencies:
+    cheerio "^1.0.0-rc.2"
+    image-size "^0.5.1"
+    is-relative-url "^2.0.0"
+    lodash "^4.17.4"
+    slash "^1.0.0"
+    unist-util-select "^1.5.0"
+
 gatsby-source-filesystem@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.4.1.tgz#fe5cd2b6f73883883867ff24e17cda5cb7d1e29a"
@@ -4319,6 +4334,10 @@ imagemin@^5.2.2:
     p-pipe "^1.1.0"
     pify "^2.3.0"
     replace-ext "^1.0.0"
+
+immutable-arrays@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/immutable-arrays/-/immutable-arrays-1.0.0.tgz#474a9e0268f7f0c56d50cede0f971983d746acc5"
 
 immutable@^3.8.1:
   version "3.8.1"
@@ -5269,6 +5288,10 @@ lodash.merge@^4.4.0, lodash.merge@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
 
+lodash.omitby@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.omitby/-/lodash.omitby-4.6.0.tgz#5c15ff4754ad555016b53c041311e8f079204791"
+
 lodash.pad@^4.1.0:
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/lodash.pad/-/lodash.pad-4.5.1.tgz#4330949a833a7c8da22cc20f6a26c4d59debba70"
@@ -5563,6 +5586,10 @@ mdast-util-toc@^2.0.1:
     github-slugger "^1.1.1"
     mdast-util-to-string "^1.0.2"
     unist-util-visit "^1.1.0"
+
+mdi@^2.0.46:
+  version "2.0.46"
+  resolved "https://registry.yarnpkg.com/mdi/-/mdi-2.0.46.tgz#65e07a7c622eda06e871cd6a336c60db8393e27a"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -7199,6 +7226,26 @@ react-dom@^15.6.0:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
+react-drip-form@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/react-drip-form/-/react-drip-form-0.0.3.tgz#822c734b6886c2b815cf04847de4287a304b1377"
+  dependencies:
+    dot-wild "^2.2.4"
+    drip-form-validator "^0.0.6"
+    immutable-arrays "^1.0.0"
+    invariant "^2.2.2"
+    lodash.foreach "^4.5.0"
+    lodash.isequal "^4.5.0"
+    lodash.isplainobject "^4.0.6"
+    lodash.omitby "^4.6.0"
+    prop-types "^15.5.10"
+
+react-easy-swipe@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/react-easy-swipe/-/react-easy-swipe-0.0.13.tgz#c00e90dabed8d0878e8c8313b867e01435f0f637"
+  dependencies:
+    prop-types "^15.5.8"
+
 react-helmet@^5.1.3:
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.1.3.tgz#cd40626593a29eecf684b6d38d711f44c48188af"
@@ -7224,6 +7271,14 @@ react-proxy@^3.0.0-alpha.0:
   resolved "https://registry.yarnpkg.com/react-proxy/-/react-proxy-3.0.0-alpha.1.tgz#4400426bcfa80caa6724c7755695315209fa4b07"
   dependencies:
     lodash "^4.6.1"
+
+react-responsive-carousel@^3.1.24:
+  version "3.1.24"
+  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.24.tgz#035572078dccbab77c5d03e071484cd1a235bc89"
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    react-easy-swipe "^0.0.13"
 
 react-router-dom@^4.1.1:
   version "4.1.2"

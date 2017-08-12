@@ -4,18 +4,18 @@ import { Navigation, NavigationItem,  NavigationLink } from '~/components/naviga
 
 export default (props) => (<Navigation>
       <NavigationItem>
-          <NavigationLink to="/" onlyActiveOnIndex activeClassName="active">Home</NavigationLink>
+          <NavigationLink exact to="/">Home</NavigationLink>
       </NavigationItem>
       <NavigationItem>
-          <NavigationLink to="/services" activeClassName="active">Services</NavigationLink>
+          <NavigationLink to="/services">Services</NavigationLink>
       </NavigationItem>
       <NavigationItem>
-          <NavigationLink to="/visas" activeClassName="active">Visas</NavigationLink>
+          <NavigationLink to="/visas">Visas</NavigationLink>
       </NavigationItem>
       <NavigationItem>
-          <NavigationLink to="/contact" activeClassName="active">Contact</NavigationLink>
+          <NavigationLink to="/contact">Contact</NavigationLink>
       </NavigationItem>
       <NavigationItem>
-          <NavigationLink to="/news" activeClassName="active">News</NavigationLink>
+          <NavigationLink to="/news">News</NavigationLink>
       </NavigationItem>
 </Navigation>)

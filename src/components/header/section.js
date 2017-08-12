@@ -14,7 +14,7 @@ import { compose, mapProps } from 'recompose';
 const Header = ({className, contactNumber}) => {
   return (
      <Flex className={className} column={true} >
-       <PageSection>
+       <PageSection bg="primary">
           <Flex>
             <Flex flex={2} >
               <Logo/>

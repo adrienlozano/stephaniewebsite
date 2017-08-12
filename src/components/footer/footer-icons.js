@@ -9,7 +9,7 @@ import { lighten } from 'polished';
 
 const FooterSocialIcon = styled(SocialIcon)`
     color: ${ ({theme}) => theme.colors.dark };
-    background-color: ${ ({theme}) => lighten(0.6, theme.color.dark) };
+    background-color: ${ ({theme}) => lighten(0.6, theme.colors.dark) };
     &:hover{
         background-color: ${ ({theme}) => theme.colors.white };
         color: ${ ({theme}) => theme.colors.dark };
@@ -19,7 +19,7 @@ const FooterSocialIcon = styled(SocialIcon)`
 const toIcon = chain(({name, url}) => {
     return (
     <SocialIconGroupItem key={name}>
-        <FooterSocialIcon icon={name} url={url} /> } />
+        <FooterSocialIcon icon={name} url={url} />
     </SocialIconGroupItem>);
 });
 
