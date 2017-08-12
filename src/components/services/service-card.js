@@ -19,7 +19,7 @@ const ServiceCard = ({className, caption, extract, thumb, image, link,slug, id, 
         </CardContent>
         
         <CardActions>
-            <LinkButton href={slug}>READ MORE</LinkButton>
+            <LinkButton href={slug} pb={2}>READ MORE</LinkButton>
         </CardActions>
     </Card>
 )};

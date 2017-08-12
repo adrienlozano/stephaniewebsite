@@ -8,7 +8,7 @@ import CalloutButton from './button';
 const CalloutSection = ({className}) => (<PageSection className={className} bg="dark" py={128} >
         <Typography component="h1" color="#FFF" size={1.5}>Want to find out more?</Typography>
         <Typography component="h2" color="#FFF" size={1}>Subheading</Typography>
-        <CalloutButton>Contact Us</CalloutButton>
+        <CalloutButton href="contact">Contact Us</CalloutButton>
 </PageSection>);
 
 export default styled(CalloutSection)`
