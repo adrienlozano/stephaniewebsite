@@ -1,15 +1,12 @@
 ---
 title: The New Subclass 457 Visa Caveats May be Unlawful
-date: "01-07-2017"
+date: "01-06-2017"
 caption: Subclass 457 Visa Caveats may be unlwaful
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
 tags: 
   - remark
   - Kitchen Sink
   - Images
 ---
-The New Subclass 457 Visa Caveats May be Unlawful
-
 In April this year the government surprised everyone by introducing caveats on certain occupations
 for Subclass 457 visa applications. However, it has been suggested by prominent visa lawyers that
 these caveats may be unlawful!
