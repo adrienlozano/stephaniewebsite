@@ -6,7 +6,7 @@ import { Card, CardMedia, CardContent, CardActions } from "~/components/card";
 
 import {  compose, setDisplayName } from 'recompose';
 
-const ServiceCard = ({className, caption, extract, thumb, image, link,slug, id, tags, ...props}) => {
+const ServiceCard = ({className, caption, extract, thumb, image, link,slug, id, tags, date, ...props}) => {
 
     return (
     <Card className={className} {...props}>
