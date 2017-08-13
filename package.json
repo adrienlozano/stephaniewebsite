@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "date-fns": "^1.28.5",
     "drip-form-validator": "^0.0.6",
     "gatsby": "^1.8.4",
     "gatsby-link": "^1.6.7",
