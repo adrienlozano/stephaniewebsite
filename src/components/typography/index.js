@@ -6,7 +6,7 @@ import withStyle from "~/enhancers/with-style";
 import { space, color, fontSize, removeProps } from 'styled-system';
 
 var transformCapitilize = css`
-  text-transform: caitalize;
+  text-transform: capitalize;
 `
 const capitalize = ({capitalize}) => capitalize ?  transformCapitilize : null;
 
