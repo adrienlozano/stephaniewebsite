@@ -1,11 +1,12 @@
 import React from 'react';
 import PageSection from '~/components/page-section';
+import Typography from '~/components/typography';
 
 const ServiceRoute = ({data}) =>{
     let { html, frontmatter } = data ? data.markdownRemark : { frontmatter : {}};
     return (
         <PageSection bg="light">
-            <h1>{frontmatter.title}</h1>
+            <Typography component="h1">{frontmatter.title}</Typography>
             <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </PageSection>)
 }
