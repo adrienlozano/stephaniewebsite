@@ -1,8 +1,8 @@
 ---
 title: Skilled Visas
 caption: Skilled Visas
-image: /assets/images/visas/skilled-visas.jpg
-thumb: /assets/images/visas/skilled-visas.thumb.jpg
+image: /images/visas/skilled-visas.jpg
+thumb: /images/visas/skilled-visas.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 ---
 These visas are for skilled workers who are under 50 years of age, are able to obtain a positive Skills Assessment and have enough points on the points test to apply. Applicants will also need to meet health and character requirements.

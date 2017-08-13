@@ -1,13 +1,62 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import Test from "~/components/test";
+import CalloutSection from '~/components/callout';
+import MainCarousel from '~/components/main-carousel';
+import { ServicesSection } from '~/components/services';
+import { NewsSection } from '~/components/news';
 
-const IndexPage = () =>
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+export default ({data}) => {
+   const services = data ? data.services.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug })) : [];
+   const news = data ? data.news.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug, excerpt: x.node.excerpt })) : [];
 
-  </div>
+return (
+    <div>
+      <MainCarousel/>
+      <ServicesSection services={services}/>
+      <CalloutSection/>
+      <NewsSection news={news} py={5} />
+    </div>
+  )
+}
 
-export default IndexPage
+export const pageQuery = graphql`
+    fragment Content on MarkdownRemarkEdge{
+      node{
+        fields{
+          area,
+          slug
+        },
+        id,
+        frontmatter{
+          title,
+          caption,
+          extract,
+          image,
+          thumb,
+          tags,
+          date
+        }
+      }
+    }
+  
+query LandingQuery {
+    services:allMarkdownRemark(
+        limit: 100
+        filter:{ fields: { area: { eq: "services" } }}
+    ) {
+      edges {
+       ...Content
+      }
+  },
+    news:allMarkdownRemark(
+        limit: 100
+        filter:{ fields: { area: { eq: "news" } }}
+        sort: { fields: [frontmatter___date],  order: DESC }
+    ) {
+      edges {
+        ...Content,
+        node{
+          excerpt(pruneLength: 350)
+        }
+      }
+  },
+}`;

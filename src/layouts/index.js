@@ -1,62 +1,45 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Header from '~/components/header';
+import Footer from '~/components/footer';
+import { setDisplayName, compose, defaultProps } from 'recompose';
+import { injectGlobal } from 'styled-components'
 
-import './index.css'
+import Head from 'react-helmet';
 
-const Header = () =>
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
+import { ThemeProvider } from 'styled-components';
+import { Flex } from 'rebass';
+import { Provider  } from 'rebass';
+import 'normalize.css';
+import "react-responsive-carousel/lib/styles/carousel.css";
+import 'mdi/css/materialdesignicons.css';
+import 'typeface-roboto-slab';
+import 'typeface-roboto';
+import theme from "~/app/theme";
 
-const TemplateWrapper = ({ children }) =>
-  <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
-  </div>
+injectGlobal`
+  * { box-sizing: border-box; }
+  body, html, #PhenomicRoot, #PhenomicRoot > div {
+    height: 100%;
+  }
+`
+ 
+const Body = ({children}) => (<div>{children}</div>);
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+var Layout = ({children}) =>{
+    return (
+        <Provider theme={theme}>
+            <div style={{height: "100%" }}>
+                <Header/>
+                <Body>{children()}</Body>
+                <Footer/>
+            </div>
+        </Provider>
+    );
 }
 
-export default TemplateWrapper
+var enhance = compose(
+    setDisplayName('Layout')
+);
+
+export default enhance(Layout);
+export { Layout };

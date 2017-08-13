@@ -7,7 +7,9 @@ const theme = {
             neutralAccent: "#9CCC65",
             dark: "#263238",
             light: "#EEE",
-            danger: "#FF1E57"
+            danger: "#FF1E57",
+            white: "#FFF",
+            black: "#000"
         },
         font: "Roboto, Serif"
 }
