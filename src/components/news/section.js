@@ -3,11 +3,12 @@ import styled from 'styled-components';
 import Typography from '~/components/typography';
 import PageSection from '~/components/page-section';
 import { setDisplayName, compose, defaultProps } from 'recompose';
+import NewsPanel from './panel';
 
-const NewsSection = ({children, ...props}) => (
+const NewsSection = ({news, ...props}) => (
     <PageSection bg="light" {...props}>
          <Typography component="h1" size={1}>Migration News</Typography>
-         {children}
+         <NewsPanel news={news}/>
     </PageSection>
 );
 
