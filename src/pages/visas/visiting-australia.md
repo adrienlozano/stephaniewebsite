@@ -2,8 +2,8 @@
 title: Visiting Australia
 caption: Visiting Australia
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
-image: images/visas/visiting-australia.jpg
-thumb: images/visas/visiting-australia.thumb.jpg
+image: /images/visas/visiting-australia.jpg
+thumb: /images/visas/visiting-australia.thumb.jpg
 ---
 Everyone who visits Australia needs a visa, even if you are just intending a short trip. There are several different types of visas to visit Australia and your eligibility for each depends on factors such as your country of passport and any criminal history you may have. These visas can allow you to visit Australia for up to 3, 6 or 12 months and may allow multiple entries during that period.
 
