@@ -8,12 +8,12 @@ import format from 'date-fns/format';
 export default ({data}) =>{ 
     const news = data ? data.news.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug, excerpt: x.node.excerpt })) : [];
     
-    var articles = news.map(article => (
+    var articles = news.map( ({title, excerpt, slug, date}) => (
         <Box mb={5} >
-            <Typography component="h4" pb={0} mb={0}>{article.title}</Typography>
-            <Typography f={1} pt={0} mt={1} color="secondaryAccent">{ format(article.date, "DD MMM, YYYY")}</Typography>
-            <Typography>{article.excerpt}</Typography>
-            <LinkButton href={article.slug}>Read More</LinkButton>
+            <Typography component="h4" pb={0} mb={0}>{title}</Typography>
+            <Typography f={1} pt={0} mt={1} color="secondaryAccent">{ format(date, "DD MMM, YYYY")}</Typography>
+            <Typography>{excerpt}</Typography>
+            <LinkButton href={slug}>Read More</LinkButton>
         </Box>
     ));
 

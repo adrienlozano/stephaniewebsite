@@ -4,7 +4,8 @@ import LinkButton from '~/components/link-button';
 import { Box, Flex } from 'rebass';
 import format from 'date-fns/format';
 
-export default ({className, article = {}, ...rest}) => {
+export default ({className, article, ...rest}) => {
+    article = article ? article : {};
     
     return (
         <Box className={className} {...rest}>

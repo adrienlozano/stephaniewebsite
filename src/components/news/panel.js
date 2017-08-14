@@ -3,7 +3,7 @@ import { Flex, Box } from 'rebass';
 import Highlight from './highlight';
 import RecentList from './recent-list';
 
-export default ({news}) => {
+export default ({news = []}) => {
 
 var highlight = null;
 var recentNews = [...news];
