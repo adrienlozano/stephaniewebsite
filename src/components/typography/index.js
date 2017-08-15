@@ -17,7 +17,7 @@ var enhance = compose (
 
 var Typography = componentFromProp('component');
 
-var Wrapper = ({className, children, component, ...rest}) => {
+var Wrapper = ({className, capitalize, children, component, ...rest}) => {
   var next =removeProps(rest);
   return (<Typography className={className} component={component} {...next}>{children}</Typography>)
 }
