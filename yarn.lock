@@ -2710,6 +2710,10 @@ domhandler@^2.3.0:
   dependencies:
     domelementtype "1"
 
+domready@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/domready/-/domready-1.0.8.tgz#91f252e597b65af77e745ae24dd0185d5e26d58c"
+
 domutils@1.1:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.1.6.tgz#bddc3de099b9a2efacc51c623f28f416ecc57485"
@@ -3610,9 +3614,9 @@ gatsby-transformer-remark@^1.7.0:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.1.1"
 
-gatsby@^1.8.4:
-  version "1.8.4"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.8.4.tgz#cfc99710db197d6592a0bb077f9bb08a5ffced6a"
+gatsby@^1.8.11:
+  version "1.8.11"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.8.11.tgz#1602d67163709a220dceb095a8e55ea4c45dc44a"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -3642,6 +3646,7 @@ gatsby@^1.8.4:
     css-loader "^0.26.1"
     debug "^2.6.0"
     detect-port "^1.2.1"
+    domready "^1.0.8"
     dotenv "^4.0.0"
     eventemitter2 "^4.1.0"
     express "^4.14.0"
@@ -3707,7 +3712,7 @@ gatsby@^1.8.4:
     sift "^3.2.6"
     slash "^1.0.0"
     socket.io "^2.0.3"
-    static-site-generator-webpack-plugin "^3.1.0"
+    static-site-generator-webpack-plugin "^3.4.1"
     string-similarity "^1.2.0"
     style-loader "^0.13.0"
     tracer "^0.8.7"
@@ -4323,11 +4328,11 @@ hullabaloo-config-manager@^1.1.0:
     resolve-from "^3.0.0"
     safe-buffer "^5.0.1"
 
-iconv-lite@0.4.15:
+iconv-lite@0.4.15, iconv-lite@~0.4.13:
   version "0.4.15"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
 
-iconv-lite@^0.4.17, iconv-lite@~0.4.13:
+iconv-lite@^0.4.17:
   version "0.4.18"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.18.tgz#23d8656b16aae6742ac29732ea8f0336a4789cf2"
 
@@ -7327,7 +7332,7 @@ react-router-dom@^4.1.1:
     prop-types "^15.5.4"
     react-router "^4.1.1"
 
-react-router-scroll@ytase/react-router-scroll#build:
+"react-router-scroll@github:ytase/react-router-scroll#build":
   version "0.4.1"
   resolved "https://codeload.github.com/ytase/react-router-scroll/tar.gz/991ecddb08885e1fb80ec1e9dbf3a35844b7d4cd"
   dependencies:
@@ -8360,7 +8365,7 @@ statehood@2.x.x:
     items "1.x.x"
     joi "6.x.x"
 
-static-site-generator-webpack-plugin@^3.1.0:
+static-site-generator-webpack-plugin@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/static-site-generator-webpack-plugin/-/static-site-generator-webpack-plugin-3.4.1.tgz#6ee22468830bc546798a37e0fca6fd699cc93b81"
   dependencies:

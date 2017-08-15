@@ -6,7 +6,7 @@
   "dependencies": {
     "date-fns": "^1.28.5",
     "drip-form-validator": "^0.0.6",
-    "gatsby": "^1.8.4",
+    "gatsby": "^1.8.11",
     "gatsby-link": "^1.6.7",
     "gatsby-plugin-react-helmet": "^1.0.1",
     "mdi": "^2.0.46",
