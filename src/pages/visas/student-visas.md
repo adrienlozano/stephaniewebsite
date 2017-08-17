@@ -4,6 +4,7 @@ caption: Student Visas
 image: /images/visas/student-visas.jpg
 thumb: /images/visas/student-visas.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
+order: 7
 ---
 Student visas are for those who wish to study in Australia. 
 
