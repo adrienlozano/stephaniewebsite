@@ -14,7 +14,7 @@ const ContactPage = ({settings, ...other}) => {
 
 return (<PageSection bg="light">
         <Heading>Contact</Heading>
-        <Typography>You can phone us on <PhoneLink phone={phone}/> or email us at <EmailLink email={email}/></Typography>
+        <Typography>You can phone us on <PhoneLink phone={phone}/>, email us at <EmailLink email={email}/> or complete the enquiry form below.</Typography>
 
         <ContactForm/>
         <Typography>A registered migration agent will respond to your enquiry as soon as possible.</Typography>
