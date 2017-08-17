@@ -59,8 +59,3 @@ var validations = {
 }
 
 export default dripForm({ validations : validations })(ContactForm);
-
-/*
-Email: stephanie@mooremigration.com
-Phone: +61 4 6659 5807
-*/
