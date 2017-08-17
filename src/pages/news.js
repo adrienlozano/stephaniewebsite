@@ -1,6 +1,7 @@
 import React from 'react';
 import PageSection from "~/components/page-section";
 import Typography from '~/components/typography';
+import Heading from '~/components/heading';
 import LinkButton from '~/components/link-button';
 import { Box } from 'rebass';
 import format from 'date-fns/format';
@@ -19,7 +20,7 @@ export default ({data}) =>{
 
     return (
         <PageSection bg="light">
-            <Typography component="h1">News</Typography>
+            <Heading>News</Heading>
             {articles}
         </PageSection>
     )

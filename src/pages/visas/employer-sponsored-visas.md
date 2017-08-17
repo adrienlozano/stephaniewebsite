@@ -4,6 +4,7 @@ caption: Employer Sponsored Visas
 image: /images/visas/employer-sponsored-visas.jpg
 thumb: /images/visas/employer-sponsored-visas.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
+order: 2
 ---
 These visas are for those who have an occupation that is in demand in Australia, meet the skills requirements and have an employer who is willing to sponsor them in that occupation.
 There are three types of employer sponsored visas:

@@ -4,6 +4,7 @@ caption: Appealing a Visa Refusal
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
 image: /images/services/appealing-visa-refusal.jpg
 thumb: /images/services/appealing-visa-refusal.thumb.jpg
+order: 4
 ---
 If your visa application has been refused and you would like to appeal the decision, contact us URGENTLY as time restrictions on lodging your appeal apply.
 

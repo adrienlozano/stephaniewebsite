@@ -15,6 +15,7 @@ export const pageQuery = graphql`
         visas: allMarkdownRemark(
         limit: 100
         filter:{ fields: { area: { eq: "visas"} }}
+        sort: { fields: [frontmatter___order], order: ASC }
     ){
       edges {
         node{
