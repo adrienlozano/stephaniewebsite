@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Typography from '~/components/typography';
+import Heading from '~/components/heading';
 import PageSection from '~/components/page-section';
 import { setDisplayName, compose, defaultProps } from 'recompose';
 import NewsPanel from './panel';
 
 const NewsSection = ({news = [], ...props}) => (
     <PageSection bg="light" {...props}>
-         <Typography component="h1" size={1}>Migration News</Typography>
+         <Heading>Migration News</Heading>
          <NewsPanel news={news}/>
     </PageSection>
 );
