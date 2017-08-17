@@ -42,7 +42,7 @@ const ContactForm = ({ handlers, meta, submitting, ...rest }) => {
             <FormField label="Email" name="email"  />
             <FormField label="Phone Number" name="phone"  />
             <FormField label="Country of passport" name="country"   />
-            <FormField label="Details of your enquiry" type="textarea" name="enquiry"  />
+            <FormField label="Details of your enquiry" type="textarea" rows={10} name="enquiry"  />
             <Flex justify="flex-end">
                 <Button bg="neutralAccent" disabled={ invalid || pristine || submitting } >Submit</Button>
             </Flex>
