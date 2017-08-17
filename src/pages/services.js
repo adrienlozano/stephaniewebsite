@@ -14,6 +14,7 @@ export const pageQuery = graphql`
         services: allMarkdownRemark(
         limit: 2000
         filter:{ fields: { area: { eq: "services"} }}
+        sort: { fields: [frontmatter___order], order: ASC }
     ){
       edges {
         node{

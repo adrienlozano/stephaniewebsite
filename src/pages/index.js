@@ -33,7 +33,8 @@ export const pageQuery = graphql`
           image,
           thumb,
           tags,
-          date
+          date,
+          order
         }
       }
     }
@@ -42,6 +43,7 @@ query LandingQuery {
     services:allMarkdownRemark(
         limit: 100
         filter:{ fields: { area: { eq: "services" } }}
+        sort: { fields: [frontmatter___order], order: ASC }
     ) {
       edges {
        ...Content
