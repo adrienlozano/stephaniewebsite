@@ -1,6 +1,5 @@
 import React from 'react';
 import { ServicesSection } from '~/components/services';
-import Typography from '~/components/typography';
 
 export default ({className, data}) => {
     const services = data ? data.services.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug })) : [];
