@@ -12,6 +12,11 @@ const CalloutButton = styled(Link)`
     &:hover {
         background-color: ${ ({theme}) =>  theme.colors.secondaryAccent } ;
     }
+
+    &:active, &:visited {
+        ${ ({theme}) => theme.colors.white };
+    }
+
     padding: 0.6em;
     display:inline-block;
     margin-left:auto;
