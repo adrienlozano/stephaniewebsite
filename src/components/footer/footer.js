@@ -12,4 +12,4 @@ const Footer = ({settings, className}) => {
 
 const FooterContainer = ({settings, component : Component}) => (<Footer settings={settings.map(x => x.general)}></Footer>)
 
-export default withSettings(FooterContainer);
+export default withSettings()(FooterContainer);

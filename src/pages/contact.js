@@ -21,4 +21,4 @@ return (<PageSection bg="light">
     </PageSection>);
 }
 
-export default withSettings(ContactPage);
+export default withSettings()(ContactPage);
