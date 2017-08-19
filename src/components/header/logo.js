@@ -51,8 +51,6 @@ clipRule='evenodd' strokeLinejoin='round' strokeMiterlimit='1.414'>
 
 export default styled(Logo)`
   margin: 30px;
-  max-height:120px;
-  max-width: 700px;
   margin-left:0px;
   width:100%;
 `

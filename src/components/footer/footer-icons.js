@@ -1,10 +1,11 @@
 import { chain } from 'ramda';
 import React from 'react';
 import styled, {withTheme} from 'styled-components';
-import { SocialIconGroup, SocialIconGroupItem, SocialIcon } from '~/components/social';
+import { SocialIconGroup, SocialIconGroupItem, SocialLink } from '~/components/social';
 import IconsContainer from "~/components/social/container";
-import { withProps } from 'recompose';
+import { withProps, compose } from 'recompose';
 import { lighten } from 'polished';
+import withSocial from '~/enhancers/with-social';
 
 const toIcon = (theme) => chain(({name, url}) => {
     const props = { 
@@ -16,12 +17,11 @@ const toIcon = (theme) => chain(({name, url}) => {
 
     return (
     <SocialIconGroupItem key={name}>
-        <SocialIcon icon={name} url={url}  {...props} />
+        <SocialLink url={url} icon={name} {...props}/>
     </SocialIconGroupItem>);
 });
 
 const FooterIcons = ({icons, props, theme})=>{
-
     var children = icons.map(toIcon(theme)).getOrElse(null);
 
     return (
@@ -31,6 +31,9 @@ const FooterIcons = ({icons, props, theme})=>{
     )
 };
 
-const EnhancedFooterIcons = withTheme(FooterIcons);
+const enhance = compose(
+    withSocial,
+    withTheme
+)
 
-export default (props) => (<IconsContainer component={EnhancedFooterIcons} {...props} />)
+export default enhance(FooterIcons);

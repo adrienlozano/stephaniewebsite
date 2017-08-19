@@ -1,18 +1,16 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, withTheme } from 'styled-components';
 import { darken, lighten } from 'polished';
 import { Circle } from 'rebass';
 import { width, height } from 'styled-system';
-import { defaultProps } from 'recompose';
+import { defaultProps, compose } from 'recompose';
+import Icon from '~/components/icon';
 
-var iconClass = (name) => (`mdi mdi-${name}`);
-
-const SocialLink = ({icon, url, className}) => { 
-    return (
+const SocialLink = ({icon, url, className}) =>  (
     <a className={className} href={url}>
-        <i className={iconClass(icon) }></i>
+        <Icon icon={icon}/>
     </a>
-)}
+);
 
 const size = ({ theme, size }) => (css`
     width: ${ size }em;
@@ -47,6 +45,9 @@ const StyledSocialLink = styled(SocialLink)`
     ${size};
 `
 
-const enhance = defaultProps({size: 1.8});
+
+const enhance = compose(
+    defaultProps({size: 1.8})
+);
 
 export default enhance(StyledSocialLink);
