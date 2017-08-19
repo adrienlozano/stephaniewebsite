@@ -1,9 +1,13 @@
+import React from 'react';
 import settings  from '~/app/settings.json';
-import { withProps } from 'recompose';
+import { withProps, compose } from 'recompose';
 import { Maybe } from 'ramda-fantasy';
 
-const enhance = withProps({
-    settings: Maybe.of(settings)
-});
+const withSettings = (map = x => ({ settings: x })) => {
+    return  compose(
+        withProps(map(Maybe.of(settings)))
+    );
+}
 
-export default enhance;
+
+export default withSettings;
