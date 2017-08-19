@@ -11,6 +11,9 @@ const StyledButton = styled(BlockLink)`
         font-weight:bold;
         background-color:inherit;
     }
+    &:visited: {
+        ${color};
+    }
     cursor: pointer;
 `
 
