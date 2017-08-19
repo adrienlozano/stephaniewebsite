@@ -9,8 +9,8 @@ import format from 'date-fns/format';
 export default ({data}) =>{ 
     const news = data ? data.news.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug, excerpt: x.node.excerpt })) : [];
     
-    var articles = news.map( ({title, excerpt, slug, date}) => (
-        <Box mb={5} >
+    var articles = news.map( ({title, excerpt, slug, date, id}) => (
+        <Box key={id} mb={5} >
             <Typography component="h4" pb={0} mb={0}>{title}</Typography>
             <Typography f={1} pt={0} mt={1} color="secondaryAccent">{ format(date, "DD MMM, YYYY")}</Typography>
             <Typography>{excerpt}</Typography>
