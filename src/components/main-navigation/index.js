@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Navigation, NavigationItem,  NavigationLink } from '~/components/navigation';
 
-export default (props) => (<Navigation>
+export default (props) => (<Navigation {...props}>
       <NavigationItem>
           <NavigationLink exact to="/">Home</NavigationLink>
       </NavigationItem>

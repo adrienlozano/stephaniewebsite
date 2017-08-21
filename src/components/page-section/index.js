@@ -12,7 +12,7 @@ const fixed = (width) => `
 `;
 
 const StyledInnerSection = styled(Section)`
-    ${({type, ...other}) => type === "fixed" ? fixed(960) : null };
+    ${({type, ...other}) => type === "fixed" ? fixed(1024) : null };
 `
 
 const InnerSection = defaultProps({type: "fixed", py:4})(StyledInnerSection);
