@@ -6,6 +6,7 @@ tags:
   - remark
   - Kitchen Sink
   - Images
+image: /images/services/appealing-visa-refusal.jpg
 ---
 In April this year the government surprised everyone by introducing caveats on certain occupations
 for Subclass 457 visa applications. However, it has been suggested by prominent visa lawyers that
