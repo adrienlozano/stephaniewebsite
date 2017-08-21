@@ -9,9 +9,13 @@ const toNavIconLinks = (icons) => icons.map( ({name, url}) => (
     </NavLink>)
 )
 
-const HeaderToolbar = ({contactNumber, icons}) => {
+const HeaderToolbar = ({contactNumber, icons, onMenuClick}) => {
+  
     return (
     <Toolbar bg="secondary" color="white">
+      <NavLink onClick={ onMenuClick } >
+        <Icon icon="menu" f={4}></Icon>
+      </NavLink>
       <NavLink ml='auto' href={`tel:${contactNumber}`}>
         <Icon icon="phone" f={2} pr={2}></Icon> {contactNumber}
       </NavLink>

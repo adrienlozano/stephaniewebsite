@@ -6,21 +6,20 @@ import withSettings from "~/enhancers/with-settings";
 import Logo from './logo';
 import PageSection from '~/components/page-section';
 import MainNavigation from '~/components/main-navigation';
-import { compose, mapProps } from 'recompose';
+import { compose, mapProps, withState, withHandlers } from 'recompose';
 import HeaderToolbar from './toolbar';
 
-const Header = ({className, contactNumber, icons}) => {
+const Header = ({className, contactNumber, icons, toggleMenu, menuOpen}) => {
   return (
      <Flex className={className} column={true} >
        <PageSection bg="secondary" py={0}>
-         <HeaderToolbar contactNumber={contactNumber} icons={icons}/>
+         <HeaderToolbar contactNumber={contactNumber} icons={icons} onMenuClick={toggleMenu}/>
        </PageSection>
-      
        <PageSection bg="primary" py={0}>
          <Logo/>
        </PageSection>
       <PageSection bg="white" py={0}  >
-        <MainNavigation/>
+        <MainNavigation open={menuOpen}/>
       </PageSection>
     </Flex>
   )
@@ -40,7 +39,11 @@ const withSocial = withSettings(settings =>
 
 const enhance = compose(
   withContactNumber,
-  withSocial
+  withSocial,
+  withState('menuOpen', 'setMenuOpen', false),
+  withHandlers({
+    toggleMenu: ({ setMenuOpen, menuOpen }) => (e) =>  setMenuOpen(!menuOpen)
+  })
 )
 
 export default enhance(StyledHeader);
