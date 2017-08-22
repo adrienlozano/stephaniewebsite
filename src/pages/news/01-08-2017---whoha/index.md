@@ -10,5 +10,4 @@ image: /images/services/review-lodged-application.jpg
 ---
 Wow Adrien is learning git and how to update news articles on the site.
 
-# This is a fantastic DAY!
-Woop woop!
+This has been changed
