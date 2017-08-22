@@ -26,4 +26,10 @@ const PageSection = ({children, bg, ...props}) => {
     )
 };
 
-export default PageSection;
+const enhance = compose(
+    defaultProps({
+        "px" : 3
+    })
+);
+
+export default enhance(PageSection);
