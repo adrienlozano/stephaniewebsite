@@ -3,6 +3,7 @@ title: Employer Sponsored Visas
 caption: Employer Sponsored Visas
 image: /images/visas/employer-sponsored-visas.jpg
 thumb: /images/visas/employer-sponsored-visas.thumb.jpg
+icon: worker
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 order: 2
 ---

@@ -4,6 +4,7 @@ caption: Visas for Couples
 image: /images/visas/visas-for-couples.jpg
 thumb: /images/visas/visas-for-couples.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
+icon: heart
 order: 5
 ---
 These visas are for those who are in a relationship with an Australian citizen, Australian permanent resident or New Zealand citizen.
