@@ -3,6 +3,7 @@ title: Skilled Visas
 caption: Skilled Visas
 image: /images/visas/skilled-visas.jpg
 thumb: /images/visas/skilled-visas.thumb.jpg
+icon: wrench
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 order: 1
 ---

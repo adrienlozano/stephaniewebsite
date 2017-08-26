@@ -4,6 +4,7 @@ caption: Graduate Visas
 image: /images/visas/graduate-visas.jpg
 thumb: /images/visas/graduate-visas.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
+icon: book-open-page-variant
 order: 3
 ---
 The Temporary Graduate visa allows those who have recently graduated from an Australian educational institution stay temporarily in Australia.
