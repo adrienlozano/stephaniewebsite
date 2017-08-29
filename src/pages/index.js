@@ -56,10 +56,10 @@ const StyledIcon = styled(Icon)`
 
 const Visa = withTheme(({title, slug, icon, theme}) => {
   return (
-  <Box w={[1, 1/2, 1/3, 1/4]} mb={[5, 6]} style={{ textAlign: "center"}}>
+  <Box w={[1, 1/2, 1/3, 1/5]} mb={[5, 6]} style={{ textAlign: "center"}}>
     <VisaLink href={slug}>
       <StyledBox bg="light" ><StyledIcon color="dark"  icon={icon}></StyledIcon></StyledBox>
-      <Heading f={[1, 2, 3, 4, 5]}>{title}</Heading>
+      <Heading f={[1, 2, 3, 4]}>{title}</Heading>
     </VisaLink>
   </Box>
 )
@@ -76,7 +76,7 @@ export default ({data}) => {
    const services = data.services.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug }));
    const news = data.news.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug, excerpt: x.node.excerpt }));
    const visas = data.visas.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug }));
-    
+   
 return (
     <div>
       <MainCarousel/>
@@ -129,16 +129,16 @@ query LandingQuery {
     ...Content
     }
   },
-    news:allMarkdownRemark(
-        limit: 100
-        filter:{ fields: { area: { eq: "news" } }}
-        sort: { fields: [frontmatter___date],  order: DESC }
-    ) {
-      edges {
-        ...Content,
-        node{
-          excerpt(pruneLength: 350)
-        }
+  news:allMarkdownRemark(
+      limit: 100
+      filter:{ fields: { area: { eq: "news" } }}
+      sort: { fields: [frontmatter___date],  order: DESC }
+  ) {
+    edges {
+      ...Content,
+      node{
+        excerpt(pruneLength: 350)
       }
+    }
   },
 }`;
