@@ -140,5 +140,5 @@ query LandingQuery {
         excerpt(pruneLength: 350)
       }
     }
-  },
+  }
 }`;
