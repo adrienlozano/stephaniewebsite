@@ -1,7 +1,7 @@
 ---
 title: Appealing a Visa Refusal
 caption: Appealing a Visa Refusal
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
+extract: Have your appeal prepared by an experienced migration agent to ensure that you meet all of the relevant criteria to secure your Australian residency.
 image: /images/services/appealing-visa-refusal.jpg
 thumb: /images/services/appealing-visa-refusal.thumb.jpg
 order: 4

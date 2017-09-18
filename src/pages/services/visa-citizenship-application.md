@@ -1,7 +1,7 @@
 ---
 title: Citizenship Applications
 caption: Visas & Citizenship Applications
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
+extract: Have your visa or citizenship application prepared to a professional standard by an experienced migration agent to give it the highest chance of success.
 image: /images/services/visa-citizenship-application.jpg
 thumb: /images/services/visa-citizenship-application.thumb.jpg
 order: 2

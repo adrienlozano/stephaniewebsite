@@ -1,7 +1,7 @@
 ---
 title: Review Lodged Application
 caption: Review Lodged Application
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
+extract: Have your lodged visa application reviewed by an experienced migration agent to ensure it meets all of the relevant criteria and that all of the necessary documentation has been provided.
 image: /images/services/review-lodged-application.jpg
 thumb: /images/services/review-lodged-application.thumb.jpg
 order: 3

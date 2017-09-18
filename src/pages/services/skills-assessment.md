@@ -1,7 +1,7 @@
 ---
 title: Skills Asessment
 caption: Skills Assessment
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
+extract: Have your skills assessment application prepared to a professional standard by an experienced migration agent to give it the highest chance of success.
 image: /images/services/skills-assessment.jpg
 thumb: /images/services/skills-assessment.thumb.jpg
 order: 5

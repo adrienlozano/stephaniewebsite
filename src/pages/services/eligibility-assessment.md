@@ -1,7 +1,7 @@
 ---
 title: Eligibility Assessment
 caption: Eligibility Assessment
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
+extract: Understand the visa options or citizenship pathways available to you by obtaining a comprehensive eligibility assessment.
 image: /images/services/eligibility-assessment.jpg
 thumb: /images/services/eligibility-assessment.thumb.jpg
 order: 1
