@@ -13,7 +13,7 @@ export default (props) => (<Navigation {...props}>
           <NavigationLink to="/visas">Visas</NavigationLink>
       </NavigationItem>
       <NavigationItem>
-          <NavigationLink to="/citizenship">Visas</NavigationLink>
+          <NavigationLink to="/citizenship">Citizenship</NavigationLink>
       </NavigationItem>
       <NavigationItem>
           <NavigationLink to="/contact">Contact</NavigationLink>

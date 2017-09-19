@@ -1,8 +1,8 @@
 ---
 title: Retirement Visas
 caption: Retirement Visas
-image: /images/visas/retirement-visas.jpg
-thumb: /images/visas/retirement-visas.thumb.jpg
+image: /images/visas/retirement-visa.jpg
+thumb: /images/visas/retirement-visa.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 icon: sunglasses
 order: 9

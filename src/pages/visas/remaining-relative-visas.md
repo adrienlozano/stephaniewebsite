@@ -1,8 +1,8 @@
 ---
 title: Remaining Relative Visas
 caption: Remaining Relative
-image: /images/visas/remaining-relative-visas.jpg
-thumb: /images/visas/remaining-relative-visas.jpg
+image: /images/visas/remaining-relative-visa.jpg
+thumb: /images/visas/remaining-relative-visa.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 icon: share-variant
 order: 8
