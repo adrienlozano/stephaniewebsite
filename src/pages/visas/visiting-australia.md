@@ -13,4 +13,6 @@ There are also two different types of working holiday visas that allow you to vi
 
 Even though you are just intending a short visit, you will still need to meet health and character requirements and may need to show that you are a genuine temporary entrant.
 
-Ensure you Australian holiday runs as smoothly as possible. Contact our experienced staff TODAY for advice and assistance in relation to obtaining your visa to visit Australia.
+Ensure you Australian holiday runs as smoothly as possible.
+
+[Contact](/contact) our experienced staff TODAY for advice and assistance in relation to obtaining your visa to visit Australia.

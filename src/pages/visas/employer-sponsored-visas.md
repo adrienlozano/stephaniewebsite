@@ -22,7 +22,7 @@ In order to be eligible to apply for this visa you must meet the skills requirem
 There are three stages in obtaining a Temporary Work Visa:
 
 1.	The employer becomes an approved sponsor
-2.	The employer nominates a prospective employee to fill a position in their business 
+2.	The employer nominates a prospective employee to fill a position in their business
 3.	The prospective employee then applies for a Temporary Work visa to fill this position
 
 Contact our experienced staff TODAY to assess your eligibility for a Temporary Work Visa and to assist you with the ever changing and increasingly strict visa requirements.
@@ -40,11 +40,11 @@ You can apply for this visa under one of the following streams:
 This stream is for eligible subclass 457 visa holders who have worked for two years, while holding a subclass 457 visa, in the same occupation with their nominating employer who wants to offer them a permanent position in that occupation.
 
 **The Direct Entry Stream**
-This stream is for applicants who have at least three years of relevant work experience, are able to obtain a Skills Assessment and demonstrate a higher level of English ability.   
+This stream is for applicants who have at least three years of relevant work experience, are able to obtain a Skills Assessment and demonstrate a higher level of English ability.
 
 **The Agreement Stream**
 This stream is for applicants who have been nominated by an employer through a labour agreement.
-Contact our experienced staff at More Migration TODAY to prepare your Employer Nomination Scheme visa to the highest standard and through the most appropriate pathway. 
+Contact our experienced staff at More Migration TODAY to prepare your Employer Nomination Scheme visa to the highest standard and through the most appropriate pathway.
 
 ## Regional Sponsored Nomination Scheme:
 This is a permanent residency visa for workers with an eligible skilled occupation who are sponsored by an employer to work in a regional area of Australia. Regional Australia includes most of Australia except for Sydney, Newcastle, Melbourne, Wollongong, Brisbane or the Gold Coast.
@@ -58,8 +58,9 @@ You can apply for this visa under one of the following streams:
 This stream is for eligible subclass 457 visa holders who have worked for two years, while holding a subclass 457 visa, in the same occupation with their nominating employer who wants to offer them a permanent position in that occupation.
 
 **The Direct Entry Stream**
-This stream is for applicants who meet the skills requirement without having to apply through the transition stream. For some applicants, this may require obtaining a Skills Assessment. Applicants will also need to demonstrate a higher level of English ability.   
+This stream is for applicants who meet the skills requirement without having to apply through the transition stream. For some applicants, this may require obtaining a Skills Assessment. Applicants will also need to demonstrate a higher level of English ability.
 
 **The Agreement Stream**
 This stream is for applicants who have been nominated by an employer through a labour agreement.
-Contact our experienced staff at More Migration TODAY to prepare your Regional Sponsored 
+
+[Contact](/contact) our experienced staff at More Migration TODAY to prepare your Regional Sponsored
