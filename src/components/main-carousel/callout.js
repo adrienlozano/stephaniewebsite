@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import  { responsiveStyle } from 'styled-system';
 
 const Container = styled.div`
-    padding: 1em;
+    padding: 2em !important;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: #FFF;
