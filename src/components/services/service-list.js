@@ -8,6 +8,7 @@ const CardWrapper = ({children, className}) => (<div className={className}>{chil
 const StyledCardWrapper = styled(CardWrapper)`
     ${ width };
     ${ space };
+    display:flex;
 `
 
 const ServiceList = ({className, services}) => {
@@ -23,7 +24,6 @@ const ServiceList = ({className, services}) => {
 
 const StyledServiceList = styled(ServiceList)`
     > * {
-        flex-grow:1;
         margin: 10px;
     }
 `

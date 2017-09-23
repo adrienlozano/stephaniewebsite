@@ -1,8 +1,8 @@
 ---
 title: Remaining Relative Visas
 caption: Remaining Relative
-image: /images/visas/remaining-relative-visas.jpg
-thumb: /images/visas/remaining-relative-visas.jpg
+image: /images/visas/remaining-relative-visa.jpg
+thumb: /images/visas/remaining-relative-visa.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 icon: share-variant
 order: 8
@@ -11,4 +11,4 @@ These are permanent residency visas for applicants whose only near relatives (in
 
 There are two subclasses of the Remaining Relative visa, one which can be applied for if you are in Australia, the other if you are outside Australia. They are both subject to capping and queuing arrangements which mean that only a small number of applications are being granted each year. As a result, applications are currently taking over 50 years to be released for final processing. This makes it particularly important to know whether you are eligible to apply for a Remaining Relative visa in Australia or not. If you are eligible to apply while in Australia you could be granted a bridging visa which will allow you to live in Australia during the processing time. If you apply while outside Australia you will not have the same right to stay in Australia while the visa is processing.
 
-Contact our experienced staff at More Migration TODAY to assess your eligibility for a Remaining Relative visa and to secure your residency in Australia.
+[Contact](/contact) our experienced staff at More Migration TODAY to assess your eligibility for a Remaining Relative visa and to secure your residency in Australia.

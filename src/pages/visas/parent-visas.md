@@ -16,7 +16,7 @@ The main criteria for all Parent visas are as follows:
 3.	One of your children has been living in Australia lawfully for at least 2 years before you lodge your visa application and is willing to sponsor you; and
 4.	You meet health and character requirements.
 
-Parent visas attract high application fees payable to the Department of Immigration and Border Protection or long processing times (approximately 30 years after your application has been queued). 
+Parent visas attract high application fees payable to the Department of Immigration and Border Protection or long processing times (approximately 30 years after your application has been queued).
 
-Contact our experienced staff at More Migration TODAY to ensure that you apply for the Parent visa that best suits your needs.
+[Contact](/contact) our experienced staff at More Migration TODAY to ensure that you apply for the Parent visa that best suits your needs.
 

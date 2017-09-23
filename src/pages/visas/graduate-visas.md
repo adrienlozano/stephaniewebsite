@@ -17,5 +17,5 @@ Visas under this stream are granted for 18 months to those students who graduate
 #### Post-Study Work Steam
 Visas under this stream can be granted up to 4 years to those students who graduate with a degree and were granted their first student visa on or after 5 November 2011. The length of the visa will depend on the type of degree obtained.
 
-Contact our experienced staff at More Migration TODAY to discuss your Temporary Graduate visa application.
+[Contact](/contact) our experienced staff at More Migration TODAY to discuss your Temporary Graduate visa application.
 

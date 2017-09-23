@@ -28,6 +28,8 @@ const StyledCard = styled(Card)`
     overflow:hidden;
     ${ space };
     ${ width };
+    display:flex;
+    flex-direction:column;
 `;
 
 const EnhancedCard = enhance(StyledCard);

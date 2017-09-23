@@ -24,9 +24,9 @@ Contact our experienced staff at More Migration TODAY to assist you with your Pr
 
 ## Partner Visa
 
-This visa is for those couples who are married or are in a de facto relationship. Same sex couples can apply for this visa on the basis of a de facto relationship. 
+This visa is for those couples who are married or are in a de facto relationship. Same sex couples can apply for this visa on the basis of a de facto relationship.
 
-If you are applying on the basis of a de facto relationship, generally that relationship must have existed for at least 12 months before you apply for the visa, however, some exceptions apply. 
+If you are applying on the basis of a de facto relationship, generally that relationship must have existed for at least 12 months before you apply for the visa, however, some exceptions apply.
 
 Please note that if you are applying for this visa on the basis of your relationship with a New Zealand citizen, the New Zealand citizen must also meet certain eligibility criteria.
 
@@ -46,9 +46,9 @@ Contact our experienced staff TODAY to ensure that you meet all of the eligibili
 
 ### New Zealand Citizen Family Relationship Visa
 
-If you are in relationship with a New Zealand citizen and are not eligible for one of the above visas, you may be able to apply for the New Zealand Citizen Family Relationship Visa. This is a temporary visa for 5 years, however, can be renewed multiple times and will allow you to work and study in Australia. 
+If you are in relationship with a New Zealand citizen and are not eligible for one of the above visas, you may be able to apply for the New Zealand Citizen Family Relationship Visa. This is a temporary visa for 5 years, however, can be renewed multiple times and will allow you to work and study in Australia.
 
 You will need to show that you are married or in a de facto relationship with the New Zealand citizen who is in Australia on a Special Category visa. There are also health and character requirements.
 
-Contact our experienced staff at Moore Migration TODAY to assist you in applying for a New Zealand Citizen Family Relationship visa
+[Contact](/contact) our experienced staff at Moore Migration TODAY to assist you in applying for a New Zealand Citizen Family Relationship visa
 

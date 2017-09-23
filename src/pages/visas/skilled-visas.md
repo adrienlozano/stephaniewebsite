@@ -28,8 +28,8 @@ This is a permanent residency visa that allows migration for those whose occupat
 
 #### Skilled Regional Visa
 
-There are both temporary and permanent Skilled Regional visas. The temporary visa is a pathway to obtaining the permanent residency visa. The temporary visa is for those whose occupation appear on the relevant occupation list and who have been sponsored by a state or territory government agency to live, work and study in an area that is classified as a regional and low population growth metropolitan area or an eligible relative living in a designated area of Australia. 
+There are both temporary and permanent Skilled Regional visas. The temporary visa is a pathway to obtaining the permanent residency visa. The temporary visa is for those whose occupation appear on the relevant occupation list and who have been sponsored by a state or territory government agency to live, work and study in an area that is classified as a regional and low population growth metropolitan area or an eligible relative living in a designated area of Australia.
 
 Once you have a Skilled Regional (Provisional) visa, have lived in a specified regional area of Australia for at least two years and have worked full-time in a specified regional area for at least one year you may be eligible for the Skilled Regional (Residence) visa.
 
-Contact our experienced staff at More Migration TODAY to secure your Skilled visa!
+[Contact](/contact) our experienced staff at More Migration TODAY to secure your Skilled visa!

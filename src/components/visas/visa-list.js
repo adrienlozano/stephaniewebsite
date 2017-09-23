@@ -23,7 +23,6 @@ const VisaList = ({className, visas}) => {
 
 const StyledVisaList = styled(VisaList)`
     > * {
-        flex-grow:1;
         margin: 10px;
     }
 `

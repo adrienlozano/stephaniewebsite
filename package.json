@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.5",
     "date-fns": "^1.28.5",
-    "drip-form-validator": "^0.0.6",
+    "drip-form-validator": "^0.0.7",
     "gatsby": "^1.8.11",
     "gatsby-link": "^1.6.7",
     "gatsby-plugin-react-helmet": "^1.0.1",
@@ -15,10 +16,10 @@
     "polished": "^1.4.0",
     "ramda": "^0.24.1",
     "ramda-fantasy": "^0.8.0",
-    "react-drip-form": "^0.0.3",
+    "react-drip-form": "^0.0.4",
     "react-responsive-carousel": "^3.1.24",
     "rebass": "^1.0.3",
-    "recompose": "^0.24.0",
+    "recompose": "^0.25.0",
     "styled-system": "^1.0.0-12",
     "typeface-roboto": "^0.0.35",
     "typeface-roboto-slab": "^0.0.35"
@@ -36,7 +37,7 @@
     "tdd": "ava --watch"
   },
   "devDependencies": {
-    "ava": "^0.21.0",
+    "ava": "^0.22.0",
     "babel-preset-env": "^1.6.0",
     "bluebird": "^3.5.0",
     "gatsby-plugin-catch-links": "^1.0.4",
@@ -62,9 +63,5 @@
       "babel-register"
     ],
     "babel": "inherit"
-  },
-  "browserslist": [
-    "IE >= 11",
-    "last 2 versions"
-  ]
+  }
 }
