@@ -17,8 +17,8 @@ const StyledInnerSection = styled(Section)`
 
 const InnerSection = defaultProps({type: "fixed", py:4})(StyledInnerSection);
 
-const PageSection = ({children, bg, ...props}) => {
-    return (<Section bg={bg} >
+const PageSection = ({className, children, bg, ...props}) => {
+    return (<Section className={className} bg={bg} >
             <InnerSection {...props} >
                {children}
             </InnerSection>
