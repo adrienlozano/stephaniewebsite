@@ -17,13 +17,13 @@ const enhance = compose(
 const CardMedia = ({className, children, ...rest}) => (<Flex className={`${className} card-media`}>{children}</Flex>);
 const StyledCardMedia = styled(CardMedia)`
     img { 
-        max-width:100%;
+        width:100%;
         height:auto;
         max-height:300px;
         margin:0;
         padding:0;
         object-fit:cover;
-        object-position: ${ ({thumbPosition }) =>  { console.log(thumbPosition); return thumbPosition ? thumbPosition: "initial"; } };
+        object-position: ${ ({thumbPosition }) => thumbPosition ? thumbPosition: "initial" };
     }
     ${ space };
     ${ width };
