@@ -76,7 +76,7 @@ const VisaSection = withTheme(({visas, theme}) =>{
 export default ({data}) => {
    const services = data.services.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug }));
    const news = data.news.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug, excerpt: x.node.excerpt }));
-   const visas = data.citizenship.edges.concat(data.visas.edges).map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug }));
+   const visas = data.visas.edges.concat(data.citizenship.edges).map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug }));
 
 return (
     <div>
