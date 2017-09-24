@@ -3,7 +3,7 @@ title: Australian Citizenship
 caption: Employer Sponsored Visas
 image: /images/citizenship/australian-citizenship.jpg
 thumb: /images/citizenship/australian-citizenship.thumb.jpg
-icon: worker
+icon: certificate
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 order: 10
 ---

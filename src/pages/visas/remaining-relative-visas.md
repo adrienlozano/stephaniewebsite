@@ -5,6 +5,7 @@ image: /images/visas/remaining-relative-visa.jpg
 thumb: /images/visas/remaining-relative-visa.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 icon: share-variant
+thumbPosition: 70% 0%
 order: 8
 ---
 These are permanent residency visas for applicants whose only near relatives (including step-relatives) live in Australia. Your near relatives include your and your partner’s parents, siblings and children who are not dependent on you or your partner. To be eligible you must also be sponsored by an eligible relative, have someone provide an assurance of support (a commitment to provide financial support) and meet health and character requirements.

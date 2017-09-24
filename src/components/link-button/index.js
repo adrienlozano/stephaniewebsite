@@ -11,14 +11,14 @@ const StyledButton = styled(BlockLink)`
         font-weight:bold;
         background-color:inherit;
     }
-    &:visited: {
+    &:visited, &:link{
         ${color};
     }
     cursor: pointer;
 `
 
 const enhance = compose(
-    defaultProps( { 
+    defaultProps( {
         color: "primaryAccent"
     } )
 )

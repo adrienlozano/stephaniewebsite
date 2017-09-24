@@ -41,7 +41,6 @@ const Tile = styled.div`
     a:visited, a:link {
         color: #FFF;
     }
-
 `;
 
 const Separator = styled.div`
@@ -50,6 +49,7 @@ const Separator = styled.div`
     height:2em;
     line-height:2em;
     text-align:center;
+    font-size:1.3em;
 `
 
 const ServiceRoute = ({data}) =>{

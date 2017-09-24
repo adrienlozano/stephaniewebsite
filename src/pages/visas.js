@@ -30,7 +30,8 @@ export const pageQuery = graphql`
           extract,
           image,
           thumb,
-          tags
+          tags,
+          thumbPosition
           }
        }
       }

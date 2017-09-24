@@ -8,8 +8,8 @@ import withSettings from "~/enhancers/with-settings";
 
 const CalloutSection = ({className, heading, subHeading}) => {
     return (<PageSection className={className} bg="dark" py={128} >
-        <Typography component="h1" color="#FFF" f={[4, 6, 8, 8]}>{heading}</Typography>
-        <Typography component="h2" color="#FFF" f={[2, 4, 6, 6]}>{subHeading}</Typography>
+        <Typography component="h1" color="#FFF" f={[4, 6]}>{heading}</Typography>
+        <Typography component="h2" color="#FFF" f={[2, 4]}>{subHeading}</Typography>
         <CalloutButton href="contact">Contact Us</CalloutButton>
     </PageSection>)
 };
