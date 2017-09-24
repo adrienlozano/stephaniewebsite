@@ -106,7 +106,8 @@ export const pageQuery = graphql`
           tags,
           date,
           order,
-          icon
+          icon,
+          thumbPosition
         }
       }
     }

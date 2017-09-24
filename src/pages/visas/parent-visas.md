@@ -5,6 +5,7 @@ image: /images/visas/parent-visas.jpg
 thumb: /images/visas/parent-visas.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 icon: parent
+thumbPosition: 30% 0%
 order: 6
 ---
 These are temporary and permanent category visas that allow Australian citizens, permanent residents and eligible New Zealand citizens to bring their parents to Australia.

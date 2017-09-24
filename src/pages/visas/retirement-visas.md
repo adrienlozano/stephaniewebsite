@@ -5,6 +5,7 @@ image: /images/visas/retirement-visa.jpg
 thumb: /images/visas/retirement-visa.thumb.jpg
 extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
 icon: sunglasses
+thumbPosition: 30% 0%
 order: 9
 ---
 This is a temporary visa that lasts for four years, however, can be applied for multiple times. It allows you to bring your partner with you to Australia and to work in Australia for up to 40 hours per fortnight. This is the only retirement category visa.

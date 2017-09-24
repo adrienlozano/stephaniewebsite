@@ -3,9 +3,19 @@ import styled from 'styled-components';
 import { Flex } from 'rebass';
 import { width, space } from 'styled-system';
 import { compose, setDisplayName, defaultProps } from 'recompose';
-import withStyle from "~/enhancers/with-style";
 
-const style = `
+const enhance = compose(
+    setDisplayName("CardMedia"),
+    defaultProps({
+        m: 0,
+        p: 0,
+        align: 'center',
+        thumbPosition: "50% 0%"
+    })
+);
+
+const CardMedia = ({className, children, ...rest}) => (<Flex className={`${className} card-media`}>{children}</Flex>);
+const StyledCardMedia = styled(CardMedia)`
     img { 
         max-width:100%;
         height:auto;
@@ -13,22 +23,10 @@ const style = `
         margin:0;
         padding:0;
         object-fit:cover;
-        object-position: 50% 0%;
+        object-position: ${ ({thumbPosition }) =>  { console.log(thumbPosition); return thumbPosition ? thumbPosition: "initial"; } };
     }
     ${ space };
     ${ width };
 `
 
-const enhance = compose(
-    setDisplayName("CardMedia"),
-    withStyle(style),
-    defaultProps({
-        m: 0,
-        p: 0,
-        align: 'center'
-    })
-);
-
-const CardMedia = ({className, children, ...rest}) => (<Flex className={`${className} card-media`}>{children}</Flex>)
-
-export default enhance(CardMedia);
+export default enhance(StyledCardMedia);
