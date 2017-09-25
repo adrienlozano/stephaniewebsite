@@ -3,9 +3,9 @@ This repository contains the source and documentation for the moore migration we
 [styled-components](https://www.styled-components.com/) and makes heavy use of [rebass](http://jxnblk.com/rebass/). This means that all associated
 docs for these libraries are relevant throughout the code base.
 # Prerequisites
-[Node JS](https://nodejs.org/en/)
-[Python 2.7.x](https://www.python.org/downloads/)
-[c++ build tools for visual studio 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15) or equivalent
+* [Node JS](https://nodejs.org/en/)
+* [Python 2.7.x](https://www.python.org/downloads/)
+* [c++ build tools for visual studio 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15) or equivalent
 
 **Please Note** Python and c++ build tools are a pre-req for the image sharp NPM package which gets compiled on the associated platform. This
 is only required if you are looking to run the site locally for development purposes. 
@@ -15,23 +15,23 @@ First ensure you have yarn installed. You can either follow the [official docume
 have node installed you can install yarn globally using the following command
 
 ```shell
-    npm install yarn --global
+npm install yarn --global
 ```
 
 Once yarn is installed from the root of the project
 ```shell
-    yarn install
+yarn install
 ```
 
 # Running
 To run the application in development mode i.e. watch simply execute
 ```shell
-    npm run develop
+npm run develop
 ```
 
 To build a production version of the application execute
 ```shell
-    npm run build
+npm run build
 ```
 
 # Deployment
