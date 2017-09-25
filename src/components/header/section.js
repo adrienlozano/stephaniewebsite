@@ -35,7 +35,7 @@ const Header = ({className, contactNumber, icons, toggleMenu, menuOpen}) => {
          <Logo/>
        </PageSection>
        <MenuPageSection bg="white" py={0} open={menuOpen}>
-        <MainNavigation open={menuOpen}/>
+        <MainNavigation open={menuOpen} toggle={toggleMenu}/>
       </MenuPageSection>
     </Flex>
   )
