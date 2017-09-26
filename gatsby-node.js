@@ -6,19 +6,26 @@ const slash = require("slash");
 const kebabCase = require("./src/utils/kebab-case");
 const { mergeDeepRight } = require('ramda');
 
-/* 
+/*
   Resolve a template given a specific node edge and a given template hash. Use the default template
   as specified by the hash unless a predefined hash is specified based on the given area.
 */
-const resolveTemplate = (templates, edge) => {
-  
- var template = templates.default;
+const resolveTemplate = (name, templates, area) => {
+  var template = null;
 
- if(edge.node.fields.area && edge.node.fields.area in templates){
-   template = templates[edge.node.fields.area];
- }
+  if(area && area in templates){
+    template = templates[area];
+  }
 
- return template;
+  if(template && typeof(template) === "object"){
+    template = template[name];
+  }
+
+  if(template === null){
+    template = templates.default;
+  }
+
+  return template;
 }
 
 
@@ -41,7 +48,7 @@ const getBasePageConfig = (edge, component, config = {}) => {
 */
 const createDefaultPages = (createPage, templates, edges) => {
  edges.forEach(edge => {
-   var template = resolveTemplate(templates, edge);
+   var template = resolveTemplate("default", templates, edge.node.fields.area);
    var config = getBasePageConfig(edge, template);
    createPage(config);
  });
@@ -51,13 +58,33 @@ const createDefaultPages = (createPage, templates, edges) => {
  Page creation for news including next and prev included as part of the context
 */
 const createNewsPages = (createPage, templates, articles) => {
- articles.forEach( (edge, index) => {
-   var template = resolveTemplate(templates, edge);
+
+  articles.forEach( (edge, index) => {
+   var template = resolveTemplate("post", templates, edge.node.fields.area);
    const prev = index === 0 ? false : articles[index - 1].node;
    const next = index === articles.length - 1 ? false : articles[index + 1].node;
    var config = getBasePageConfig(edge, template, { context: { prev, next }  });
-   createPage(config); 
+   createPage(config);
  });
+
+ const PAGE_SIZE = 10;
+ const total = Math.ceil(articles.length / PAGE_SIZE);
+ for(let i =1; i <= total; i++){
+   var edge = articles[i - 1];
+
+   var slug = i === 1 ? `/${edge.node.fields.area}` : `/${edge.node.fields.area}/page/${i}`;
+   createPage({
+     path: slug,
+     component: resolveTemplate("default", templates, edge.node.fields.area),
+     context: {
+       current: i,
+       skip: (i - 1) * PAGE_SIZE,
+       total,
+       area: edge.node.fields.area,
+       pageSize: PAGE_SIZE
+     }
+   })
+ }
 };
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
@@ -66,8 +93,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
 
     const templates =  {
-      default: path.resolve('src/templates/template-default.js'),
-      news: path.resolve('src/templates/template-news.js')
+      default: path.resolve('src/templates/default.js'),
+      news: {
+        default: path.resolve('src/templates/news-index.js'),
+        post: path.resolve('src/templates/news-post.js')
+      },
     }
 
     graphql(
@@ -113,7 +143,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
       //Define pages automatically defined based on markdown using the predefined fields as specified by node creation
       createDefaultPages(createPage, templates, data.pages.edges);
-      createNewsPages(createPage, { default: templates.news }, data.news.edges);
+      createNewsPages(createPage,  templates , data.news.edges);
       resolve()
     })
   })
@@ -123,20 +153,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 // Add custom url pathname for blog posts.
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField, createParentChildLink  } = boundActionCreators;
-  
+
     if (node.internal.type === `File`) {
       const parsedFilePath = path.parse(node.absolutePath);
       const pagePath = path.resolve(node.absolutePath).replace(path.resolve('./src/pages/'), "");
       var area = path.parse(pagePath).dir.split(path.sep)[1];
       if(!area)
           area = null;
-  
+
       let slug = parsedFilePath.dir.indexOf('---') > 0 ? `/${parsedFilePath.dir.split('---')[1]}/` : `/${parsedFilePath.name}/`;
-      slug = area !== null ? `/${area}${slug}` : slug;  
-  
-      createNodeField({ node, name: `slug`, value: slug });   
+      slug = area !== null ? `/${area}${slug}` : slug;
+
+      createNodeField({ node, name: `slug`, value: slug });
       createNodeField({ node, name: `area`, value: area });
-  
+
     } else if (
       node.internal.type === `MarkdownRemark` &&
       typeof node.slug === `undefined`
@@ -147,7 +177,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
         name: `area`,
         value: fileNode.fields.area,
       });
-  
+
       createNodeField({
         node,
         name: 'slug',
