@@ -1,6 +1,8 @@
 import React from "react"
-import Link from "gatsby-link"
+import Link from "~/components/link";
 import kebabCase from "~/utils/kebab-case"
+import Heading from "~/components/heading";
+import PageSection from "~/components/page-section";
 
 class TagsPageRoute extends React.Component {
   render() {
@@ -8,23 +10,18 @@ class TagsPageRoute extends React.Component {
     const { area } = this.props.pathContext;
 
     return (
-      <div>
-        <h1>Tags</h1>
+      <PageSection bg="light">
+        <Heading>Tags</Heading>
         <ul>
           {allTags.map(tag =>
             <li key={tag.fieldValue}>
-              <Link
-                style={{
-                  textDecoration: `none`,
-                }}
-                to={`${area}/tags/${kebabCase(tag.fieldValue)}/`}
-              >
+              <Link to={`${area}/tags/${kebabCase(tag.fieldValue)}/`}>
                 {tag.fieldValue} ({tag.totalCount})
               </Link>
             </li>
           )}
         </ul>
-      </div>
+      </PageSection>
     )
   }
 }
