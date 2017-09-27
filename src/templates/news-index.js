@@ -7,10 +7,12 @@ import { Box } from 'rebass';
 import format from 'date-fns/format';
 import Pagination from '~/components/pagination';
 import NumberLink from '~/components/pagination/number-link';
-import Link from '~/components/link';
-
+import Link, { BadgeLink } from '~/components/link';
 import { curry } from 'ramda';
 import Icon from '~/components/icon';
+import {Badge} from 'rebass';
+import kebabCase from "~/utils/kebab-case";
+import styled from "styled-components";
 
 const toAreaPageUrl = curry((area, page) => {
     return page === 1 ? `/${area}` : `/${area}/page/${page}`;
@@ -21,14 +23,17 @@ export default ({data, pathContext}) =>{
     const { current, total, area } = pathContext;
     const toPageUrl = toAreaPageUrl(area);
 
-    var articles = news.map( ({title, excerpt, slug, date, id}) => (
-        <Box key={id} mb={5} >
+    var articles = news.map( ({title, excerpt, slug, date, tags, id}) => {
+        
+        return (
+        <Box key={slug} mb={5} >
             <Typography component="h4" pb={0} mb={0}>{title}</Typography>
             <Typography f={1} pt={0} mt={1} color="secondaryAccent">{ format(date, "DD MMM, YYYY")}</Typography>
+            <Icon style={{ marginRight: "10px"}} icon="tag"/>{ tags.map((x, index) => (<BadgeLink key={x} to={`/news/tags/${kebabCase(x)}`}>{x}</BadgeLink>)) }
             <Typography>{excerpt}</Typography>
             <LinkButton href={slug}>Read More</LinkButton>
         </Box>
-    ));
+    )});
 
     return (
         <PageSection bg="light">

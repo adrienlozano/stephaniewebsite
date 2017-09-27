@@ -3,8 +3,8 @@ require('babel-register');
 const Promise = require("bluebird");
 const path = require("path");
 const slash = require("slash");
-const kebabCase = require("./src/utils/kebab-case");
-const { mergeDeepRight } = require('ramda');
+const kebabCase = require("./src/utils/kebab-case").default;
+const { mergeDeepRight, uniq } = require('ramda');
 
 /*
   Resolve a template given a specific node edge and a given template hash. Use the default template
@@ -85,7 +85,31 @@ const createNewsPages = (createPage, templates, articles) => {
      }
    })
  }
-};
+ 
+  const tags = articles.reduce((tags, edge) => {
+   return tags.concat( edge.node.frontmatter.tags);
+  }, []);
+
+  let uniqueTags = uniq(tags);
+  uniqueTags.forEach(tag => {
+    createPage({
+      path: `/news/tags/${kebabCase(tag)}/`,
+      component: resolveTemplate("post", templates, "tags"),
+      context: {
+        tag,
+        area: "news"
+      }
+    })
+  })
+
+  createPage({
+    path: `/news/tags/`,
+    component: resolveTemplate("default", templates, "tags"),
+    context:{
+      area: "news"
+    }
+  });
+}
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -98,6 +122,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         default: path.resolve('src/templates/news-index.js'),
         post: path.resolve('src/templates/news-post.js')
       },
+      tags: {
+        default: path.resolve('src/templates/tags-index.js'),
+        post: path.resolve('src/templates/tags-post.js')
+      }
     }
 
     graphql(
@@ -183,5 +211,16 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
         name: 'slug',
         value: fileNode.fields.slug
       })
+
+      if(node.frontmatter.tags){
+        const tagSlugs = node.frontmatter.tags.map(tag => {
+          return `${fileNode.fields.area}/tags/${kebabCase(tag)}/`;
+        });
+        createNodeField({
+          node,
+          name: 'tagSlugs',
+          value: tagSlugs
+        })
+      }
     }
 }
