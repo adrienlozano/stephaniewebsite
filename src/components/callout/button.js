@@ -7,7 +7,6 @@ const CalloutButton = styled(Link)`
     background-color: ${ ({theme}) => theme.colors.primaryAccent };
     border-radius: 10px;
     text-decoration: none;
-    color: ${ ({theme}) => theme.colors.white };
 
     &:hover {
         background-color: ${ ({theme}) =>  theme.colors.secondaryAccent } ;
