@@ -1,6 +1,6 @@
 ---
 title: Adrien learns some git stuff
-date: "01-05-2017"
+date: "2017-08-01T00:00:00.000Z"
 caption: Git is pretty awesome
 tags: 
   - remark
