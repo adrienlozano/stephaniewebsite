@@ -21,4 +21,4 @@ You live in Australia and have an Australian permanent residency visa;
 
 Becoming an Australian citizen usually involves lodging an application, being interviewed, sitting a test and then attending a citizenship ceremony where you will make the Australian Citizenship Pledge. The entire process usually takes several months from lodging your application to attending the ceremony.
 
-[Contact](/contact) our experienced staff at More Migration TODAY to assess your eligibility for Australian citizenship and to have your application prepared by an experienced migration agent.
+[Contact](/contact) our experienced staff at Moore Migration TODAY to assess your eligibility for Australian citizenship and to have your application prepared by an experienced migration agent.
