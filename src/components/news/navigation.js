@@ -1,29 +1,36 @@
 import React from 'react';
-import PageSection from '~/components/page-section';
-import Typography from '~/components/typography';
-import Heading from '~/components/heading';
 import { Box } from 'rebass';
 import Link from "~/components/link";
-import styled, { color, space, width, fontSize } from 'styled-components';
+import styled from 'styled-components';
 import Icon from "~/components/icon";
 import { darken, lighten } from 'polished';
+import { path } from 'ramda';
 
-const NewsArticleLink = ({ className, link, isPrev = false}) => {
-    if(!link)
-        return null;
-    var LinkIcon = isPrev ? <Icon icon="chevron-right"/> : <Icon icon="chevron-left"/>
+const getTitle = path(['frontmatter', "title"]);
+const getSlug = path(["fields", "slug"]);
 
-    return <Link className={className} to={link.fields.slug}>{!isPrev ? LinkIcon : null}{isPrev ? "Older : " : "Newer : "}{link.frontmatter.title}{isPrev ? LinkIcon: null}</Link>
-};
+const HideOnMobile = styled.span`
+    @media (max-width: ${ ({theme}) => theme.breakpoints[0]}em){
+        display:none;
+    }
+`
+
+const NewsArticleLink = ({dock, link, linkAccessor, ...rest}) => {
+    if(!link) return null;
+    return <Link to={linkAccessor(link)} {...rest} />;
+}
 
 const StyledNewsArticleLink = styled(NewsArticleLink)`
-    float: ${ ({isPrev}) => !isPrev ? 'left' : 'right' };
     color: ${ ({theme}) => theme.colors.dark };
-    display: block;
-    width:50%;
-    text-align: ${ ({isPrev}) => !isPrev ? 'left' : 'right' };
-    height:100%;
-    line-height:4em;
+    display:flex;
+    flex:1;
+    align-items: center;
+    justify-content: ${ ({dock}) => dock === "left" ? 'flex-start' : 'flex-end' };
+    height: 4em;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+
     &:hover{
         background-color: ${ ({theme}) => theme.colors.primaryAccent };
         color: ${ ({theme}) => lighten(0.4, theme.colors.primaryAccent) };
@@ -33,14 +40,20 @@ const StyledNewsArticleLink = styled(NewsArticleLink)`
 
 const NavigationBox = styled(Box)`
     background-color: ${ ({theme}) => darken(0.05, theme.colors.light) };
-    height:4em;
+    display:flex;
 `
 
 const ArticleNavigation = ({className, next, prev}) => {
+
     return (
         <NavigationBox className={className} >
-            <StyledNewsArticleLink link={next}/>
-            <StyledNewsArticleLink link={prev} isPrev={true}/>
+            <StyledNewsArticleLink link={next} dock="left" linkAccessor={getSlug} >
+                <Icon icon="chevron-double-left"/> Newer <HideOnMobile>&nbsp;: {getTitle(next)}</HideOnMobile>
+            </StyledNewsArticleLink>
+
+            <StyledNewsArticleLink link={prev} dock="right" linkAccessor={getSlug}>
+                <HideOnMobile>{getTitle(prev)} :&nbsp;</HideOnMobile>Older <Icon icon="chevron-double-right"/>
+            </StyledNewsArticleLink>
         </NavigationBox>
     )
 };

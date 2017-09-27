@@ -9,9 +9,10 @@ import Icon from "~/components/icon";
 import { darken } from 'polished';
 import { NewsArticleNavigation } from '~/components/news';
 
+
 const NewsRoute = ({data, pathContext}) =>{
     let { html, frontmatter } = data ? data.current : { frontmatter : {}};
-    let image = frontmatter.image ? (<img src={frontmatter.image}></img>) : null;
+    let image = frontmatter.image ? (<img style={{maxWidth:"100%", objectFit: "cover"}} src={frontmatter.image}></img>) : null;
     let { prev, next } = pathContext;
 
     return (
@@ -20,7 +21,7 @@ const NewsRoute = ({data, pathContext}) =>{
             <Heading>{frontmatter.title}</Heading>
             {image}
             <Box dangerouslySetInnerHTML={{ __html: html }}></Box>
-            
+
         </PageSection>
         <NewsArticleNavigation prev={prev} next={next} />
     </div>
@@ -31,8 +32,8 @@ export default NewsRoute;
 export const pageQuery = graphql`
 query PageBySlugWithRecentNews($slug: String!, $area: String!){
     current :markdownRemark(
-        fields: { 
-            slug: { eq: $slug } 
+        fields: {
+            slug: { eq: $slug }
         }
     ){
         html
@@ -41,10 +42,10 @@ query PageBySlugWithRecentNews($slug: String!, $area: String!){
             image
         }
     }
-    recent: allMarkdownRemark( 
-        filter:{ 
-            fields: { 
-                area: { eq: $area }, 
+    recent: allMarkdownRemark(
+        filter:{
+            fields: {
+                area: { eq: $area },
                 slug: { ne : $slug }
             }
         }
