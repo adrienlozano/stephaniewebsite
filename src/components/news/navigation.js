@@ -48,11 +48,11 @@ const ArticleNavigation = ({className, next, prev}) => {
     return (
         <NavigationBox className={className} >
             <StyledNewsArticleLink link={next} dock="left" linkAccessor={getSlug} >
-                <Icon icon="chevron-double-left"/> Newer <HideOnMobile>&nbsp;: {getTitle(next)}</HideOnMobile>
+                <Icon icon="chevron-double-left"/> Newer articles <HideOnMobile>&nbsp;: {getTitle(next)}</HideOnMobile>
             </StyledNewsArticleLink>
 
             <StyledNewsArticleLink link={prev} dock="right" linkAccessor={getSlug}>
-                <HideOnMobile>{getTitle(prev)} :&nbsp;</HideOnMobile>Older <Icon icon="chevron-double-right"/>
+                <HideOnMobile>{getTitle(prev)} :&nbsp;</HideOnMobile>Older articles <Icon icon="chevron-double-right"/>
             </StyledNewsArticleLink>
         </NavigationBox>
     )
