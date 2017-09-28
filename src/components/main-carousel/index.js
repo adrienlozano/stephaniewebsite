@@ -21,10 +21,12 @@ const CarouselItem = styled.div`
     }
 `;
 
-const CalloutButton = styled(BlockLink)`
+
+const CalloutButton = BlockLink.extend`
     background-color: ${ ({theme}) => theme.colors.primaryAccent };
-    margin-top:10px;
-    padding: 0.5em;
+    margin-top:10px !important;
+    border-radius: 3px;
+    padding: 0.5em !important;
 `
 
 const MainCarousel = ({className }) => (
