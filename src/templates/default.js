@@ -23,6 +23,7 @@ const Tile = styled.div`
     border-bottom:solid 1px ${ ({theme}) => lighten(0.1, theme.colors.primary)};
     border-right:solid 1px ${ ({theme}) => lighten(0.1, theme.colors.primary)};
     line-height:10vw;
+    ${ responsiveStyle('font-size', 'fontSize') };
 
     &:hover{
         border-bottom: solid 1px ${({theme}) => lighten(0.1, theme.colors.primaryAccent)};
@@ -57,7 +58,7 @@ const ServiceRoute = ({data}) =>{
     let { html, frontmatter } = item;
     let image = frontmatter.image ? (<img style={{ maxWidth: "100%" }} src={frontmatter.image}></img>) : null;
     var relatedLinks = related ? related.edges.map( ({node}, index) => (
-        <Tile key={ `tl${node.fields.slug}`} number={index} width={[1, 1/2, 1/4]}>
+        <Tile key={ `tl${node.fields.slug}`} number={index} width={[1, 1/2, 1/4]} fontSize={["1em", "1em", "1.3em", "1.5em"]}>
             <NavigationLink to={node.fields.slug}>{node.frontmatter.title}</NavigationLink>
         </Tile>
     )) : null;
