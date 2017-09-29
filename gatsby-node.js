@@ -85,7 +85,7 @@ const createNewsPages = (createPage, templates, articles) => {
      }
    })
  }
- 
+
   const tags = articles.reduce((tags, edge) => {
    return tags.concat( edge.node.frontmatter.tags);
   }, []);
@@ -189,7 +189,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       if(!area)
           area = null;
 
-      let slug = parsedFilePath.dir.indexOf('---') > 0 ? `/${parsedFilePath.dir.split('---')[1]}/` : `/${parsedFilePath.name}/`;
+      let slug = parsedFilePath.name.indexOf('---') > 0 ? `/${parsedFilePath.name.split('---')[1]}/` : `/${parsedFilePath.name}/`;
       slug = area !== null ? `/${area}${slug}` : slug;
 
       createNodeField({ node, name: `slug`, value: slug });
@@ -223,4 +223,20 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
         })
       }
     }
+}
+
+exports.onCreatePage = async ({ page, boundActionCreators }) => {
+  const { createPage } = boundActionCreators
+
+  return new Promise((resolve, reject) => {
+    if (page.path.match(/^\/admin/)) {
+      // It's assumed that `landingPage.js` exists in the `/layouts/` directory
+      page.layout = "admin"
+
+      // Update the page.
+      createPage(page)
+    }
+
+    resolve()
+  })
 }

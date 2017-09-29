@@ -1,0 +1,92 @@
+backend:
+  name: github
+  repo: shaunmarx/moore-gatsby # Path to your Github repository
+  branch: master # Branch to update
+publish_mode: editorial_workflow
+media_folder: "static/images"
+
+title: Appealing a Visa Refusal
+caption: Appealing a Visa Refusal
+extract: Have your appeal prepared by an experienced migration agent to ensure that you meet all of the relevant criteria to secure your Australian residency.
+image: /images/services/appealing-visa-refusal.jpg
+thumb: /images/services/appealing-visa-refusal.thumb.jpg
+thumbPosition: 65% 50%
+order: 4
+
+collections:
+  - name: "services"
+    label: "Service"
+    folder: "src/pages/services"
+    create: true
+    fields:
+      -  { label: "Title", name: "title", widget: "string" }
+      -  { label: "Caption", name: "caption", widget: "string" }
+      -  { label: "Extract", name: "extract", widget: "string" }
+      -  { label: "Image", name: "image", widget: "image" }
+      -  { label: "Thumb Image", name: "thumb", widget: "image" }
+      -  { label: "Thumb Position", name: "thumbPosition", widget: "string" }
+      -  { label: "Order", name: "order", widget: "number" }
+      -  { label: Body, name: body, widget: markdown }
+
+  - name: "visas"
+    label: "Visas"
+    folder: "src/pages/visas"
+    create: true
+    fields:
+      -  { label: "Title", name: "title", widget: "string" }
+      -  { label: "Caption", name: "caption", widget: "string" }
+      -  { label: "Extract", name: "extract", widget: "string" }
+      -  { label: "Image", name: "image", widget: "image" }
+      -  { label: "Thumb Image", name: "thumb", widget: "image" }
+      -  { label: "Thumb Position", name: "thumbPosition", widget: "string" }
+      -  { label: "Order", name: "order", widget: "number" }
+      -  { label: Body, name: body, widget: markdown }
+
+  - name: "news"
+    label: "News"
+    folder: "src/pages/news"
+    slug: "{{year}}-{{day}}{{month}}-{{slug}}"
+    create: true
+    delete: true
+    fields:
+      -  { label: "Title", name: "title", widget: "string" }
+      -  { label: "Caption", name: "caption", widget: "string" }
+      -  { label: "Extract", name: "extract", widget: "string" }
+      -  { label: "Image", name: "image", widget: "image" }
+      -  { label: "Thumb Image", name: "thumb", widget: "image" }
+      -  { label: "Thumb Position", name: "thumbPosition", widget: "string" }
+      -  { label: "Order", name: "order", widget: "string" }
+      -  { label: Body, name: body, widget: markdown }
+
+  - name: "settings"
+    label: "Settings"
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Settings"
+        file: "src/app/settings.json"
+        description: "General Site Settings"
+        fields:
+          - label: "Landing Page Settings"
+            name: "landing"
+            widget: "object"
+            fields:
+              - label: "Callout"
+                name: "callout"
+                widget: "object"
+                fields:
+                  - { label: "heading", name: "heading", widget: string }
+                  - { label: "Sub Heading", name: "subHeading", widget: string }
+          - label: "General"
+            name: "general"
+            widget: "object"
+            fields:
+              - { label: "Contact Email", name: "contactEmail", widget: string }
+              - { label: "Contact Number", name: "contactNumber", widget: string }
+          - label: "Social Settings"
+            name: social
+            widget: "list"
+            fields:
+              - {label: "Social Integration", name: name, widget: string }
+              - {label: "Url", name: url, widget: string }
