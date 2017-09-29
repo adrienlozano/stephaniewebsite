@@ -10,7 +10,7 @@
     "drip-form-validator": "^0.0.7",
     "gatsby": "^1.8.11",
     "gatsby-link": "^1.6.7",
-    "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^1.0.6",
     "mdi": "^2.0.46",
     "normalize.css": "^7.0.0",
     "polished": "^1.4.0",
