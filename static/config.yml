@@ -50,12 +50,9 @@ collections:
     delete: true
     fields:
       -  { label: "Title", name: "title", widget: "string" }
+      -  { label: "Date", name: "date", widget: "datetime" }
       -  { label: "Caption", name: "caption", widget: "string" }
-      -  { label: "Extract", name: "extract", widget: "string" }
       -  { label: "Image", name: "image", widget: "image" }
-      -  { label: "Thumb Image", name: "thumb", widget: "image" }
-      -  { label: "Thumb Position", name: "thumbPosition", widget: "string" }
-      -  { label: "Order", name: "order", widget: "string" }
       -  { label: Body, name: body, widget: markdown }
 
   - name: "settings"
