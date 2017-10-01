@@ -37,7 +37,7 @@ collections:
   - name: "news"
     label: "News"
     folder: "src/pages/news"
-    slug: "{{year}}-{{day}}{{month}}-{{slug}}"
+    slug: "{{year}}-{{day}}-{{month}}---{{slug}}"
     create: true
     delete: true
     fields:
