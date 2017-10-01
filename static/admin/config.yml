@@ -3,6 +3,7 @@ backend:
   repo: shaunmarx/moore-gatsby # Path to your Github repository
   branch: master # Branch to update
 media_folder: "static/images"
+public_folder: "/"
 
 collections:
   - name: "services"
