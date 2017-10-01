@@ -18,18 +18,24 @@ const toAreaPageUrl = curry((area, page) => {
     return page === 1 ? `/${area}` : `/${area}/page/${page}`;
 });
 
+const TagsList = ({tags, path}) =>{
+    if(!tags) return null;
+    var badgeLinks = tags.map((x, index) => (<BadgeLink key={x} to={`${path}${kebabCase(x)}`}>{x}</BadgeLink>));
+    return (<span><Icon style={{ marginRight: "10px"}} icon="tag"/>{badgeLinks}</span>);
+}
+
+
 export default ({data, pathContext}) =>{
     const news = data ? data.news.edges.map(x => ({ ...x.node.frontmatter, id:x.node.id, slug: x.node.fields.slug, excerpt: x.node.excerpt })) : [];
     const { current, total, area } = pathContext;
     const toPageUrl = toAreaPageUrl(area);
-
     var articles = news.map( ({title, excerpt, slug, date, tags, id}) => {
-        
+
         return (
         <Box key={slug} mb={5} >
             <Typography component="h4" pb={0} mb={0}>{title}</Typography>
             <Typography f={1} pt={0} mt={1} color="secondaryAccent">{ format(date, "DD MMM, YYYY")}</Typography>
-            <Icon style={{ marginRight: "10px"}} icon="tag"/>{ tags.map((x, index) => (<BadgeLink key={x} to={`/news/tags/${kebabCase(x)}`}>{x}</BadgeLink>)) }
+            <TagsList tags={tags} path="/news/tags/" />
             <Typography>{excerpt}</Typography>
             <LinkButton href={slug}>Read More</LinkButton>
         </Box>
@@ -71,7 +77,6 @@ query IndexQuery($skip: Int!, $pageSize: Int!) {
           tags,
           caption,
           image,
-          tags,
           date
         }
       }

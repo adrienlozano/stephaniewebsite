@@ -92,14 +92,16 @@ const createNewsPages = (createPage, templates, articles) => {
 
   let uniqueTags = uniq(tags);
   uniqueTags.forEach(tag => {
-    createPage({
-      path: `/news/tags/${kebabCase(tag)}/`,
-      component: resolveTemplate("post", templates, "tags"),
-      context: {
-        tag,
-        area: "news"
-      }
-    })
+    if(tag){
+      createPage({
+        path: `/news/tags/${kebabCase(tag)}/`,
+        component: resolveTemplate("post", templates, "tags"),
+        context: {
+          tag,
+          area: "news"
+        }
+      })
+    }
   })
 
   createPage({

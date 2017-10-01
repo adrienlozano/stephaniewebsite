@@ -46,6 +46,8 @@ collections:
       -  { label: "Caption", name: "caption", widget: "string" }
       -  { label: "Image", name: "image", widget: "image" }
       -  { label: Body, name: body, widget: markdown }
+      -  { name: tags, label: Tags, widget: list }
+
 
   - name: "settings"
     label: "Settings"
