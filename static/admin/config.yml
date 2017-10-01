@@ -26,6 +26,7 @@ collections:
     fields:
       -  { label: "Title", name: "title", widget: "string" }
       -  { label: "Caption", name: "caption", widget: "string" }
+      -  { label: "Icon", name: "icon", widget: "string" }
       -  { label: "Extract", name: "extract", widget: "string" }
       -  { label: "Image", name: "image", widget: "image" }
       -  { label: "Thumb Image", name: "thumb", widget: "image" }
