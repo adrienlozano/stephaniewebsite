@@ -8,7 +8,7 @@ docs for these libraries are relevant throughout the code base.
 * [c++ build tools for visual studio 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15) or equivalent
 
 **Please Note** Python and c++ build tools are a pre-req for the image sharp NPM package which gets compiled on the associated platform. This
-is only required if you are looking to run the site locally for development purposes. 
+is only required if you are looking to run the site locally for development purposes.
 
 # Installation
 First ensure you have yarn installed. You can either follow the [official documentation](https://yarnpkg.com/en/docs/install) or if you already
