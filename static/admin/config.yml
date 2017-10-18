@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: shaunmarx/moore-gatsby # Path to your Github repository
-  branch: master # Branch to update
+  name: git-gateway
+  
 media_folder: "static/images"
 public_folder: "/images"
 

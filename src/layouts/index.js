@@ -28,6 +28,9 @@ const Body = ({children}) => (<div>{children}</div>);
 var Layout = ({children}) =>{
     return (
         <Provider theme={theme}>
+            <Head>
+                <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+            </Head>
             <div style={{height: "100%" }}>
                 <Header/>
                 <Body>{children()}</Body>
