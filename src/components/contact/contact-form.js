@@ -32,22 +32,29 @@ const Field = ({meta, input, ...props}) => {
 
 const FormField = dripFormField()(Field);
 
-const ContactForm = ({ handlers, meta, submitting, ...rest }) => { 
-    const { invalid, pristine } = meta;
+class ContactForm extends React.Component {
+    constructor(){
+        super();
+    }
 
-    return (
-        <form onSubmit={handlers.onSubmit}>
-            <FormField label="First Name" name="firstName" />
-            <FormField label="Last Name" name="lastName"  />
-            <FormField label="Email" name="email"  />
-            <FormField label="Phone Number" name="phone"  />
-            <FormField label="Country of passport" name="country"   />
-            <FormField label="Details of your enquiry" type="textarea" rows={10} name="enquiry"  />
-            <Flex justify="flex-end">
-                <Button bg="neutralAccent" disabled={ invalid || pristine || submitting } >Submit</Button>
-            </Flex>
-        </form>
-    )
+    render(){
+        let { handlers, meta, submitting, ...rest } = this.props;
+        const { invalid, pristine } = meta;
+
+        return (
+            <form onSubmit={handlers.onSubmit} name="contact" >
+                <FormField label="First Name" name="firstName" />
+                <FormField label="Last Name" name="lastName"  />
+                <FormField label="Email" name="email"  />
+                <FormField label="Phone Number" name="phone"  />
+                <FormField label="Country of passport" name="country"   />
+                <FormField label="Details of your enquiry" type="textarea" rows={10} name="enquiry"  />
+                <Flex justify="flex-end">
+                    <Button bg="neutralAccent" disabled={ invalid || pristine || submitting } >Submit</Button>
+                </Flex>
+            </form>
+        )
+    }
 }
 
 var validations = {
