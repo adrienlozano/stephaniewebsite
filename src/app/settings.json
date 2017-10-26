@@ -1,16 +1,1 @@
-{
-    "social" : [
-        { "name" : "facebook", "url": "http://www.facebook.com" },
-        { "name": "twitter", "url": "http://www.twitter.com" }
-    ],
-    "landing":{
-        "callout" : {
-            "heading" : "Want to find out more?",
-            "subHeading" : ""
-        }
-    },
-    "general":{
-        "contactEmail" : "contact@mooremigration.com",
-        "contactNumber" : "0466 595 807"
-    }
-}
+{"social":[{"name":"facebook","url":"http://www.facebook.com/MooreMigration/"},{"name":"twitter","url":"http://twitter.com/Moore_Migration"}],"landing":{"callout":{"heading":"Want to find out more?","subHeading":""}},"general":{"contactEmail":"contact@mooremigration.com","contactNumber":"0466 595 807"}}
