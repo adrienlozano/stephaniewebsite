@@ -42,7 +42,9 @@ class ContactForm extends React.Component {
         const { invalid, pristine } = meta;
 
         return (
-            <form onSubmit={handlers.onSubmit} name="contact" >
+            <form onSubmit={handlers.onSubmit} data-netlify="true" data-netlify-honeypot="bot-field" name="contact" >
+                <input type="hidden" name="form-name" value="contact" />
+                
                 <FormField label="First Name" name="firstName" />
                 <FormField label="Last Name" name="lastName"  />
                 <FormField label="Email" name="email"  />

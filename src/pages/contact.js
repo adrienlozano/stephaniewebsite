@@ -39,7 +39,7 @@ class ContactPage extends React.Component{
         <Heading>Contact</Heading>
         <Typography>You can phone us on <PhoneLink phone={phone}/>, email us at <EmailLink email={email}/> or complete the enquiry form below.</Typography>
 
-        <ContactForm onValidSubmit={ this.handleSubmit } ref={(form) => this.form = form }/>
+        <ContactForm onValidSubmit={ this.handleSubmit } />
         <Typography>A registered migration agent will respond to your enquiry as soon as possible.</Typography>
         </PageSection>);
     }
