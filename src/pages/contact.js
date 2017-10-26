@@ -9,6 +9,11 @@ import Heading from '~/components/heading';
 const PhoneLink = ({phone}) =>(<a href={`tel:${phone}`}>{phone}</a>);
 const EmailLink = ({email}) =>(<a href={`mailto:${email}`}>{email}</a>);
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
 class ContactPage extends React.Component{
     constructor(){
@@ -17,15 +22,10 @@ class ContactPage extends React.Component{
     }
 
     handleSubmit(values, other){
-
-        var data = new FormData();
-        for(var key in values){
-            data.append(key, values[key]);
-        }
-
         fetch("/", {
             method: "POST",
-            body: data
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode( { "form-name" : "contact", ...values})
         }).then((response) =>{
             
         });
