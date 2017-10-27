@@ -30,24 +30,35 @@ const Field = ({meta, input, ...props}) => {
     </Box>
 )};
 
+const HiddenField = ({meta, input, ...props}) => (<Input id={meta.name} {...input} type="hidden" {...props} />)
+
 const FormField = dripFormField()(Field);
+const HiddenFormField = dripFormField()(HiddenField);
 
-const ContactForm = ({ handlers, meta, submitting, ...rest }) => { 
-    const { invalid, pristine } = meta;
+class ContactForm extends React.Component {
+    constructor(){
+        super();
+    }
 
-    return (
-        <form onSubmit={handlers.onSubmit}>
-            <FormField label="First Name" name="firstName" />
-            <FormField label="Last Name" name="lastName"  />
-            <FormField label="Email" name="email"  />
-            <FormField label="Phone Number" name="phone"  />
-            <FormField label="Country of passport" name="country"   />
-            <FormField label="Details of your enquiry" type="textarea" rows={10} name="enquiry"  />
-            <Flex justify="flex-end">
-                <Button bg="neutralAccent" disabled={ invalid || pristine || submitting } >Submit</Button>
-            </Flex>
-        </form>
-    )
+    render(){
+        let { handlers, meta, submitting, ...rest } = this.props;
+        const { invalid, pristine } = meta;
+
+        return (
+            <form onSubmit={handlers.onSubmit} data-netlify="true" data-netlify-honeypot="botfield" name="contact" >               
+                <FormField label="First Name" name="firstName" />
+                <FormField label="Last Name" name="lastName"  />
+                <FormField label="Email" name="email"  />
+                <FormField label="Phone Number" name="phone"  />
+                <FormField label="Country of passport" name="country"   />
+                <FormField label="Details of your enquiry" type="textarea" rows={10} name="enquiry"  />
+                <HiddenFormField name="botfield"/>
+                <Flex justify="flex-end">
+                    <Button bg="neutralAccent" disabled={ invalid || pristine || submitting } >Submit</Button>
+                </Flex>
+            </form>
+        )
+    }
 }
 
 var validations = {
@@ -55,7 +66,9 @@ var validations = {
     lastName:  { required: true, alphaNumeric: true, max: 255 },
     email: { required: true, email: true },
     country: { required: true },
-    enquiry: { required: true, max: 1024 }
+    enquiry: { required: true, max: 1024 },
+    botfield: { max: 0 }
+
 }
 
 export default dripForm({ validations : validations })(ContactForm);
