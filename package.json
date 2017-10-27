@@ -22,7 +22,8 @@
     "recompose": "^0.25.0",
     "styled-system": "^1.0.0-12",
     "typeface-roboto": "^0.0.35",
-    "typeface-roboto-slab": "^0.0.35"
+    "typeface-roboto-slab": "^0.0.35",
+    "whatwg-fetch": "^2.0.3"
   },
   "keywords": [
     "gatsby"
