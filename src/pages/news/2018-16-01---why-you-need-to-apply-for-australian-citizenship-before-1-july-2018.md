@@ -2,7 +2,7 @@
 title: Why you Need to Apply for Australian Citizenship Before 1 July 2018
 date: 2018-01-16T10:31:46.983Z
 caption: Australian Citizenship Changes from 1 July 2018
-image: /images/AdobeStock_41935898.jpeg
+image: /images/citizenship_new.jpg
 tags:
   - Citizenship
 ---
@@ -45,6 +45,7 @@ on the date you apply that count.
 Contact our experienced staff at Moore Migration TODAY to
 secure your Australian citizenship and enjoy the benefits Australian
 citizenship as soon as possible. 
+
 
 
 
