@@ -1,10 +1,10 @@
 ---
 title: Visiting Australia
 caption: Visiting Australia
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth.
+icon: briefcase
+extract: Come to Australia for a holiday or working holiday
 image: /images/visas/visiting-australia.jpg
 thumb: /images/visas/visiting-australia.thumb.jpg
-icon: briefcase
 thumbPosition: 80% 0%
 order: 4
 ---
