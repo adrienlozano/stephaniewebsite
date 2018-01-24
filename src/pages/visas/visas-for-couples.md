@@ -5,7 +5,7 @@ icon: heart
 extract: 'Migrate to Australia on the basis of your relationship '
 image: /images/visas/visas-for-couples.jpg
 thumb: /images/visas/visas-for-couples.thumb.jpg
-thumbPosition: 90% 0%
+thumbPosition: 80% 0%
 order: 5
 ---
 These visas are for those who are in a relationship with an Australian citizen, Australian permanent resident or New Zealand citizen.
@@ -52,6 +52,7 @@ If you are in relationship with a New Zealand citizen and are not eligible for o
 You will need to show that you are married or in a de facto relationship with the New Zealand citizen who is in Australia on a Special Category visa. There are also health and character requirements.
 
 [Contact](/contact) our experienced staff at Moore Migration TODAY to assist you in applying for a New Zealand Citizen Family Relationship visa
+
 
 
 
