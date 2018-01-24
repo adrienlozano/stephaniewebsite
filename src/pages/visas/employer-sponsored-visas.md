@@ -1,10 +1,11 @@
 ---
 title: Employer Sponsored Visas
 caption: Employer Sponsored Visas
+icon: worker
+extract: Migrate to Australia to work for an employer who is willing to sponsor you
 image: /images/visas/employer-sponsored-visas.jpg
 thumb: /images/visas/employer-sponsored-visas.thumb.jpg
-icon: worker
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
+thumbPosition: 100% 0%
 order: 2
 ---
 These visas are for those who have an occupation that is in demand in Australia, meet the skills requirements and have an employer who is willing to sponsor them in that occupation.
@@ -64,3 +65,4 @@ This stream is for applicants who meet the skills requirement without having to 
 This stream is for applicants who have been nominated by an employer through a labour agreement.
 
 [Contact](/contact) our experienced staff at More Migration TODAY to prepare your Regional Sponsored
+
