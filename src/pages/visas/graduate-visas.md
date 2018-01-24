@@ -1,10 +1,12 @@
 ---
 title: Graduate Visas
 caption: Graduate Visas
+icon: book-open-page-variant
+extract: >-
+  Extend your stay in Australia after graduating from an Australian educational
+  institution
 image: /images/visas/graduate-visas.jpg
 thumb: /images/visas/graduate-visas.thumb.jpg
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
-icon: book-open-page-variant
 thumbPosition: 100% 0%
 order: 3
 ---
@@ -19,4 +21,5 @@ Visas under this stream are granted for 18 months to those students who graduate
 Visas under this stream can be granted up to 4 years to those students who graduate with a degree and were granted their first student visa on or after 5 November 2011. The length of the visa will depend on the type of degree obtained.
 
 [Contact](/contact) our experienced staff at More Migration TODAY to discuss your Temporary Graduate visa application.
+
 
