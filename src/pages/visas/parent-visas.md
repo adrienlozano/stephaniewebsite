@@ -1,10 +1,10 @@
 ---
 title: Parent Visas
 caption: Parent Visas
+icon: parent
+extract: Bring your parents to live in Australia
 image: /images/visas/parent-visas.jpg
 thumb: /images/visas/parent-visas.thumb.jpg
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
-icon: parent
 thumbPosition: 30% 0%
 order: 6
 ---
@@ -20,4 +20,5 @@ The main criteria for all Parent visas are as follows:
 Parent visas attract high application fees payable to the Department of Immigration and Border Protection or long processing times (approximately 30 years after your application has been queued).
 
 [Contact](/contact) our experienced staff at More Migration TODAY to ensure that you apply for the Parent visa that best suits your needs.
+
 
