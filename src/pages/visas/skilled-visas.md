@@ -1,10 +1,11 @@
 ---
 title: Skilled Visas
 caption: Skilled Visas
+icon: wrench
+extract: Migrate to Australia on the basis of your skills and qualifications
 image: /images/visas/skilled-visas.jpg
 thumb: /images/visas/skilled-visas.thumb.jpg
-icon: wrench
-extract: Lorem ipsum some textum gosem herith. Thenith itith isith displayeth henceforeth
+thumbPosition: 100% 0%
 order: 1
 ---
 These visas are for skilled workers who are under 50 years of age, are able to obtain a positive Skills Assessment and have enough points on the points test to apply. Applicants will also need to meet health and character requirements.
@@ -33,3 +34,4 @@ There are both temporary and permanent Skilled Regional visas. The temporary vis
 Once you have a Skilled Regional (Provisional) visa, have lived in a specified regional area of Australia for at least two years and have worked full-time in a specified regional area for at least one year you may be eligible for the Skilled Regional (Residence) visa.
 
 [Contact](/contact) our experienced staff at More Migration TODAY to secure your Skilled visa!
+
