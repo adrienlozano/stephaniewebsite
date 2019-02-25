@@ -4,7 +4,7 @@ date: 2019-02-25T10:56:08.542Z
 caption: >-
   If you are from one of the following countries, you will now need to apply for
   your Work and Holiday visa (Subclass 462) online:
-image: /images/Visiting Australia.jpeg
+image: /images/holiday_visa.jpg
 tags:
   - Work and Holiday visa
 ---
@@ -31,15 +31,10 @@ This is in addition to the following countries who already
 have access to online lodgement:
 
 * Portugal
-
 * Spain
-
 * Argentina
-
 * Uruguay
-
 * Slovakia
-
 * The
   United States of America
 
