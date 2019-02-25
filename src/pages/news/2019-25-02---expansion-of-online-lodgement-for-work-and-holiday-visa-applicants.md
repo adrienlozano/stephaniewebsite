@@ -1,9 +1,7 @@
 ---
 title: Expansion of Online Lodgement for Work and Holiday Visa Applicants
 date: 2019-02-25T10:56:08.542Z
-caption: >-
-  If you are from one of the following countries, you will now need to apply for
-  your Work and Holiday visa (Subclass 462) online:
+caption: Need to apply for your Work and Holiday visa (Subclass 462) online
 image: /images/holiday_visa.jpg
 tags:
   - Work and Holiday visa
@@ -40,3 +38,4 @@ have access to online lodgement:
 
 If you require assistance with your Work and Holiday visa
 application, contact our experienced staff at Moore Migration today.
+
