@@ -12,60 +12,36 @@ If you are from
 one of the following countries, you will now need to apply for your Work and
 Holiday visa (Subclass 462) online:
 
-·        
-Austria
-
-·        
-Chile
-
-·        
-Czech
-Republic 
-
-·        
-Hungary
-
-·        
-The
-State of Israel 
-
-·        
-Luxembourg
-
-·        
-Peru 
-
-·        
-Poland
-
-·        
-Portugal
-
-·        
-San
-Marino  
-
-·        
-Slovenia
+* Austria
+* Chile
+* Czech
+  Republic
+* Hungary
+* The
+  State of Israel
+* Luxembourg
+* Peru
+* Poland
+* Portugal
+* San
+  Marino
+* Slovenia
 
 This is in addition to the following countries who already
 have access to online lodgement:
 
-·        
-Spain
+* Portugal
 
-·        
-Argentina
+* Spain
 
-·        
-Uruguay
+* Argentina
 
-·        
-Slovakia
+* Uruguay
 
-·        
-The
-United States of America
+* Slovakia
+
+* The
+  United States of America
 
 If you require assistance with your Work and Holiday visa
-application, contact our experienced staff at Moore Migration today. 
+application, contact our experienced staff at Moore Migration today.
