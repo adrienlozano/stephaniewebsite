@@ -1,6 +1,6 @@
 ---
 title: Extended Delays in Australian Citizenship Applications
-date: 2019-02-26T10:15:50.789Z
+date: '2019-02-26T00:00:00.000Z'
 caption: >-
   Are you still waiting for a decision on your Australian citizenship by
   conferral application?
@@ -48,3 +48,4 @@ these will have any effect on citizenship processing times.
 If you wish to apply for Australian citizenship,
 contact Moore Migration today to give your Australian citizenship application
 the highest chance of success. 
+
