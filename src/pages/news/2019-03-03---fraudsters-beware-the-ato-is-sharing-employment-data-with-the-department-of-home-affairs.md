@@ -5,8 +5,8 @@ title: >-
 date: '2019-03-03T00:00:00.000Z'
 caption: >-
   The ATO is sharing data with the Department of Home Affairs to ensure that
-  business sponsors are complying with their sponsorship obligations and
-  employer sponsored visa holders are complying with their visa conditions.
+  business sponsors are complying with their sponsorship obligations and  visa
+  holders are complying with their visa conditions.
 image: /images/Warning.PNG
 tags:
   - >-
@@ -15,9 +15,7 @@ tags:
 ---
 The ATO is sharing data with the Department of Home Affairs to
 ensure that business sponsors are complying with their sponsorship obligations
-and  visa holders are complying with their visa conditions.
-
-A finding of non-compliance could be used to cancel a
+and  visa holders are complying with their visa conditions. A finding of non-compliance could be used to cancel a
 business’ sponsorship approval or a sponsored worker’s visa.
 
 The data exchange is occurring in relation to people who
@@ -28,16 +26,10 @@ respective business sponsors.
 
 The type of information the ATO is sharing with the Department of Home Affairs includes:
 
-* How
-  much a business is paying a sponsored visa holder; 
-
-* Whether
-  a visa holder is only working for their approved employer; and
-
-* Whether
-  a visa holder is only working in their approved occupation.
+* How much a business is paying a sponsored visa holder;
+* Whether a visa holder is only working for their approved employer; and
+* Whether a visa holder is only working in their approved occupation.
 
 If
-you need advice or assistance with an employer sponsored visa, contact Moore
+you need advice or assistance with an employer sponsored visa, contact the experienced staff at Moore
 Migration today.
-
