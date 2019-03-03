@@ -2,7 +2,7 @@
 title: >-
   Fraudsters Beware: the ATO is Sharing Employment Data with the Department of
   Home Affairs
-date: 2019-03-03T10:05:17.049Z
+date: '2019-03-03T00:00:00.000Z'
 caption: >-
   The ATO is sharing data with the Department of Home Affairs to ensure that
   business sponsors are complying with their sponsorship obligations and
@@ -40,3 +40,4 @@ The type of information the ATO is sharing with the Department of Home Affairs i
 If
 you need advice or assistance with an employer sponsored visa, contact Moore
 Migration today.
+
