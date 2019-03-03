@@ -10,8 +10,8 @@ caption: >-
 image: /images/Warning.PNG
 tags:
   - >-
-    Temporary Work (Skilled) (subclass 457); Temporary Skills Shortage (subclass
-    482)
+    - Temporary Work (Skilled) (subclass 457) - Temporary Skills Shortage
+    (subclass 482)
 ---
 The ATO is sharing data with the Department of Home Affairs to
 ensure that business sponsors are complying with their sponsorship obligations
@@ -33,3 +33,4 @@ The type of information the ATO is sharing with the Department of Home Affairs i
 If
 you need advice or assistance with an employer sponsored visa, contact the experienced staff at Moore
 Migration today.
+
