@@ -5,7 +5,7 @@ caption: >-
   A new Sponsored Parent (Temporary) visa will be available soon, allowing
   parents of Australian citizens, Australian permanent residents or eligible New
   Zealand citizens to stay in Australia for up to 5 years at a time. 
-image: /images/Parent Visa.jpg
+image: /images/Parent Visas.jpg
 tags:
   - Parent visa
 ---
@@ -38,4 +38,5 @@ visa and there is a cap of 15,000 visas to be granted in each program year.
 If you are interested in coming to Australia to be close to
 your children, contact Moore Migration TODAY to discuss which Parent visa is
 the best for you.
+
 
