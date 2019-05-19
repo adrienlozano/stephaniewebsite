@@ -19,29 +19,23 @@ residency.
 
 The new visas will require visa holders to live and work in regional
 Australia and will be granted for up to 5 years. The definition of ‘regional
-Australia’ for skilled visas will be expanded in November 2019 to include all
+Australia’ will also be expanded to include all
 of Australia except for the following metropolitan areas:
 
 * Sydney
 * Melbourne
 * Brisbane
 * Gold Coast
-* Perth     
-  
+* Perth
 
 The two new provisional visas that will commence in November
 2019 are as follows:
 
-1\. Skilled Employer Sponsored Regional
-\(Provisional) visa (Subclass 494) - This visa is for those who are
-sponsored by an employer in regional Australia. This visa will have almost 700
-eligible occupations.
-
-2\.  Skilled Work Regional (Provisional) visa (Subclass 491) – This visa is for those who are either sponsored by an eligible
-family member or nominated by a State or Territory government to live and work
-in regional Australia. This is a points tested visa which will have almost 500
-eligible occupations and will supersede the current Skilled Regional
-\(Provisional) Visa (Subclass 489).
+1. Skilled Employer Sponsored Regional (Provisional) visa (Subclass 494) - This visa is for those who are sponsored by an employer in regional Australia. This visa will have almost 700 eligible occupations.
+2. Skilled Work Regional (Provisional) visa (Subclass 491) – This visa is for those who are either sponsored by an eligible
+   family member or nominated by a State or Territory government to live and work
+   in regional Australia. This is a points tested visa which will have almost 500
+   eligible occupations.
 
 Holders of the above visas will be able to apply for
 permanent residency after they have been living and working in a regional area
@@ -56,5 +50,4 @@ meant to make it more attractive for regional employers to sponsor skilled
 workers which will assist in addressing skill shortages in regional areas.
 
 If you are interested in applying for a Skilled visa or
-Employer Sponsored visa, contact the experienced staff at Moore Migration today
-for advice on the best visa for you and assistance with your application.
+Employer Sponsored visa, contact the experienced staff at Moore Migration today.
