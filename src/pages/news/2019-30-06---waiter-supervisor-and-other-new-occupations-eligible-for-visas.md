@@ -6,7 +6,7 @@ caption: >-
   residency through the Goldfields Designated Area Migration Agreement (DAMA).
   The DAMA includes 72 occupations including the following which are not
   currently on any other visa occupation lists...
-image: /images/Approved.jpg
+image: /images/Skilled.jpg
 tags:
   - Temporary Skill Shortage visa (subclass 482)
   - Employer Nomination Scheme (subclass 186)
@@ -62,3 +62,4 @@ find an employer to sponsor you in the designated area.
 
 If you would like assistance with your visa application,
 contact Moore Migration today!
+
