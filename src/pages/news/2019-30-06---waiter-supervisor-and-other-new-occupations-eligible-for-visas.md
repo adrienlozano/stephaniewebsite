@@ -52,7 +52,7 @@ Another advantage in obtaining a visa through this pathway
 is that 28 of the occupations include an English language concession. This
 means that applicants can score slightly lower than would normally be required in the individual speaking,
 listening, reading or writing components of the English exam, however, must
-still achieve the same minimum overall score. This helps those whose English is
+still achieve the same overall minimum  score. This helps those whose English is
 slightly weaker in one of the four components still get over the line.
 
 Only 500 nominations can be approved for visas under the
@@ -62,4 +62,3 @@ find an employer to sponsor you in the designated area.
 
 If you would like assistance with your visa application,
 contact Moore Migration today!
-
